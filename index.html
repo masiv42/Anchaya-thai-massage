@@ -1,0 +1,1438 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Anchaya Thai Massage München | Traditionelle Thai Massage in Schwabing</title>
+<meta name="description" content="Anchaya Thai Massage in München-Schwabing: traditionelle Thai Massage, Aromaölmassage und Wellnessmassagen in ruhiger, privater Atmosphäre. Seit 2009.">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1e3530">
+<meta name="color-scheme" content="light">
+<meta property="og:title" content="Anchaya Thai Massage München">
+<meta property="og:description" content="Traditionelle Thai Massage in München-Schwabing für Entspannung und Wohlbefinden.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="de_DE">
+<meta property="og:site_name" content="Anchaya Thai Massage München">
+<meta property="og:image" content="assets/images/hero-bg.jpg">
+<meta property="og:image:alt" content="Anchaya Thai Massage München Studio">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="assets/images/hero-bg.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231e3530'/%3E%3Ctext x='16' y='22' font-family='Georgia,serif' font-size='18' fill='%23c9a96e' text-anchor='middle'%3EA%3C/text%3E%3C/svg%3E">
+<link rel="preload" as="image" href="assets/images/hero-bg.jpg" fetchpriority="high">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "ANCHAYA THAI MASSAGE",
+  "description": "Traditionelle Thai Massage in München-Schwabing zur Entspannung und Unterstützung des Wohlbefindens.",
+  "telephone": "+49 (0) 89 / 12595098",
+  "email": "info@anchaya-thai-massage.de",
+  "image": "assets/images/hero-bg.jpg",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Karl-Köglsperger-Str. 11",
+    "postalCode": "80939",
+    "addressLocality": "München",
+    "addressCountry": "DE"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "10:00",
+      "closes": "19:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": "Saturday",
+      "opens": "10:00",
+      "closes": "18:00"
+    }
+  ],
+  "priceRange": "€€"
+}
+</script>
+<style>
+/* ─────────────────────────────────────────────────────────────
+   ANCHAYA THAI MASSAGE — Design System
+   ───────────────────────────────────────────────────────────── */
+:root {
+  /* Marke */
+  --gold: #c9a96e; --gold-light: #e8d4aa; --gold-dark: #a07840; --gold-deep: #8a6630;
+  --green: #1e3530; --green-mid: #2d4a3e; --green-light: #3d6b5a;
+  --cream: #f8f4ee; --cream-dark: #f0ebe1; --ink: #0c0c0c;
+  --text: #342820; --muted: #6f6256;
+  --line: rgba(30,53,48,0.12);
+
+  /* Vertikalrhythmus / Spacing-Skala */
+  --s-1: 8px; --s-2: 16px; --s-3: 24px; --s-4: 40px; --s-5: 64px; --s-6: 96px; --s-7: 128px;
+  --section: clamp(80px, 11vw, 128px);
+
+  /* Radius */
+  --r-sm: 4px; --r-md: 8px; --r-lg: 14px;
+
+  /* Geschichtete Schatten (Tiefe) */
+  --sh-sm: 0 1px 2px rgba(30,53,48,0.05), 0 3px 10px rgba(30,53,48,0.05);
+  --sh-md: 0 4px 14px rgba(30,53,48,0.07), 0 18px 40px rgba(30,53,48,0.09);
+  --sh-lg: 0 8px 24px rgba(30,53,48,0.10), 0 30px 70px rgba(30,53,48,0.13);
+  --sh-gold: 0 20px 55px rgba(160,120,64,0.22);
+
+  /* Easing */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-soft: cubic-bezier(0.33, 0, 0.2, 1);
+}
+
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  color:var(--text); background:var(--cream); overflow-x:hidden;
+  -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+}
+img { max-width:100%; display:block; }
+
+/* Skip-Link & Fokus */
+.skip-link { position:absolute; left:16px; top:-56px; z-index:2000; background:var(--gold); color:#111; padding:12px 16px; text-decoration:none; font-weight:700; border-radius:var(--r-sm); transition:top 0.25s var(--ease); }
+.skip-link:focus { top:16px; }
+:focus-visible { outline:2px solid var(--gold-dark); outline-offset:3px; border-radius:2px; }
+/* Fokusring auf dunklen Flächen heller */
+nav a:focus-visible, .hero a:focus-visible, .hero button:focus-visible,
+#galerie button:focus-visible, #gutschein a:focus-visible, #rechtliches a:focus-visible,
+footer a:focus-visible, .fab-wa:focus-visible, .chat-wrap button:focus-visible,
+.mobile-bar a:focus-visible, .notice a:focus-visible, .hero-float a:focus-visible {
+  outline-color:var(--gold-light);
+}
+
+/* ─── Bausteine ─── */
+.container { max-width:1180px; margin:0 auto; padding:0 clamp(20px,5vw,48px); }
+.eyebrow { display:inline-flex; align-items:center; gap:12px; font-size:0.72rem; font-weight:700; letter-spacing:0.24em; text-transform:uppercase; color:var(--gold-dark); margin-bottom:18px; }
+.eyebrow::before { content:''; width:34px; height:1px; background:currentColor; opacity:0.75; }
+.on-dark .eyebrow, .eyebrow.light { color:var(--gold-light); }
+.sec-title { font-family:Georgia,"Times New Roman",serif; font-weight:400; font-size:clamp(2.1rem,4.6vw,3.6rem); line-height:1.08; letter-spacing:-0.01em; color:var(--green); margin-bottom:22px; }
+.sec-title em { font-style:italic; color:var(--gold-dark); }
+.on-dark .sec-title, .sec-title.light { color:#fff; }
+.on-dark .sec-title em { color:var(--gold-light); }
+.lead { font-size:1.05rem; line-height:1.85; color:var(--muted); max-width:62ch; }
+
+/* Ornament-Divider */
+.divider { display:flex; align-items:center; justify-content:center; gap:18px; margin:0 auto; max-width:240px; color:var(--gold); }
+.divider .dv-line { flex:1; height:1px; background:linear-gradient(to var(--dir,right), transparent, rgba(201,169,110,0.7)); }
+.divider .dv-line:last-child { background:linear-gradient(to left, transparent, rgba(201,169,110,0.7)); }
+.divider svg { width:34px; height:22px; flex-shrink:0; color:var(--gold); }
+
+/* Scroll-Reveal */
+.reveal { opacity:0; transform:translateY(28px); transition:opacity 0.9s var(--ease), transform 0.9s var(--ease); transition-delay:var(--d,0s); will-change:opacity,transform; }
+.reveal.is-visible { opacity:1; transform:none; }
+
+/* Tilt-Karten (Tiefe) */
+.tilt { transform-style:preserve-3d; transition:transform 0.5s var(--ease), box-shadow 0.5s var(--ease); }
+
+/* ─── Navigation ─── */
+nav {
+  position:fixed; top:0; left:0; right:0; z-index:1000;
+  padding:22px clamp(20px,5vw,56px); display:flex; justify-content:space-between; align-items:center;
+  transition:padding 0.45s var(--ease), background 0.45s var(--ease), box-shadow 0.45s var(--ease);
+}
+nav.scrolled { background:rgba(12,12,12,0.92); backdrop-filter:blur(18px) saturate(1.1); -webkit-backdrop-filter:blur(18px) saturate(1.1); padding:13px clamp(20px,5vw,56px); box-shadow:0 1px 0 rgba(201,169,110,0.22), 0 8px 30px rgba(0,0,0,0.18); }
+.logo { font-family:Georgia,"Times New Roman",serif; font-size:1.32rem; color:#fff; text-decoration:none; letter-spacing:0.07em; display:flex; align-items:center; gap:10px; }
+.logo svg { width:26px; height:18px; color:var(--gold); }
+.logo em { font-style:normal; color:var(--gold); }
+.nav-links { list-style:none; display:flex; gap:clamp(20px,2.6vw,36px); align-items:center; }
+.nav-links a { color:rgba(255,255,255,0.82); text-decoration:none; font-size:0.72rem; letter-spacing:0.16em; text-transform:uppercase; transition:color 0.3s; position:relative; padding:4px 0; }
+.nav-links a:not(.nav-cta)::after { content:''; position:absolute; left:0; bottom:-2px; width:0; height:1px; background:var(--gold); transition:width 0.35s var(--ease); }
+.nav-links a:not(.nav-cta):hover::after { width:100%; }
+.nav-links a:hover { color:var(--gold); }
+.nav-cta { background:var(--gold); color:#111 !important; padding:10px 22px; font-weight:700 !important; border-radius:var(--r-sm); transition:background 0.3s, transform 0.3s, box-shadow 0.3s; }
+.nav-cta:hover { background:var(--gold-light); transform:translateY(-2px); box-shadow:0 10px 24px rgba(201,169,110,0.35); }
+.burger { display:none; flex-direction:column; gap:6px; cursor:pointer; background:transparent; border:0; padding:8px; }
+.burger span { width:24px; height:2px; background:#fff; display:block; border-radius:2px; transition:all 0.35s var(--ease); }
+.burger.open span:nth-child(1) { transform:translateY(8px) rotate(45deg); }
+.burger.open span:nth-child(2) { opacity:0; }
+.burger.open span:nth-child(3) { transform:translateY(-8px) rotate(-45deg); }
+
+/* ─── HERO ─── */
+.hero { position:relative; height:100svh; min-height:660px; display:flex; align-items:flex-end; overflow:hidden; background:var(--ink); }
+.hero-media { position:absolute; inset:-16% 0; will-change:transform; }
+.hero-img { position:absolute; inset:0; background:url('assets/images/hero-bg.jpg') center 28% / cover no-repeat; animation:hzoom 18s var(--ease) forwards; }
+@keyframes hzoom { from{transform:scale(1.08)} to{transform:scale(1)} }
+.hero-ov1 { position:absolute; inset:0; background:linear-gradient(105deg, rgba(8,10,9,0.88) 0%, rgba(8,10,9,0.55) 45%, rgba(8,10,9,0.12) 100%); }
+.hero-ov2 { position:absolute; inset:0; background:linear-gradient(to top, rgba(6,8,7,0.78) 0%, rgba(6,8,7,0.12) 42%, transparent 70%); }
+.hero-deco { position:absolute; top:9%; right:5%; width:min(36vw,360px); color:rgba(201,169,110,0.16); will-change:transform; pointer-events:none; }
+.hero-deco svg { width:100%; height:auto; }
+.hero-body { position:relative; z-index:3; padding:0 clamp(24px,6vw,72px) clamp(64px,9vh,104px); max-width:820px; }
+.hero-tag { display:flex; align-items:center; gap:12px; margin-bottom:20px; animation:fadeUp 1s 0.3s both; }
+.htag-line { width:40px; height:1px; background:var(--gold); }
+.htag-txt { font-size:0.68rem; letter-spacing:0.28em; text-transform:uppercase; color:var(--gold); }
+.hero-thai { font-family:Georgia,"Times New Roman",serif; font-size:1.3rem; font-style:italic; color:rgba(255,255,255,0.55); margin-bottom:12px; animation:fadeUp 1s 0.5s both; }
+.hero-h1 { font-family:Georgia,"Times New Roman",serif; font-size:clamp(3.3rem,7.5vw,6.6rem); font-weight:300; line-height:0.94; letter-spacing:-0.015em; color:#fff; margin-bottom:26px; animation:fadeUp 1s 0.7s both; text-shadow:0 2px 40px rgba(0,0,0,0.3); }
+.hero-h1 em { font-style:italic; color:var(--gold-light); display:block; }
+.hero-p { font-size:1.05rem; color:rgba(255,255,255,0.72); line-height:1.85; max-width:500px; margin-bottom:42px; animation:fadeUp 1s 0.9s both; }
+.hero-btns { display:flex; gap:14px; flex-wrap:wrap; animation:fadeUp 1s 1.1s both; }
+.btn-gold { background:var(--gold); color:#111; padding:16px 40px; text-decoration:none; font-size:0.76rem; letter-spacing:0.14em; text-transform:uppercase; font-weight:700; border-radius:var(--r-sm); transition:transform 0.35s var(--ease), background 0.3s, box-shadow 0.35s; display:inline-block; box-shadow:0 10px 30px rgba(160,120,64,0.32); }
+.btn-gold:hover { background:var(--gold-light); transform:translateY(-3px); box-shadow:0 18px 42px rgba(160,120,64,0.42); }
+.btn-ghost { border:1px solid rgba(255,255,255,0.42); color:#fff; padding:16px 40px; text-decoration:none; font-size:0.76rem; letter-spacing:0.14em; text-transform:uppercase; border-radius:var(--r-sm); transition:all 0.35s var(--ease); display:inline-block; }
+.btn-ghost:hover { border-color:var(--gold); color:var(--gold); background:rgba(255,255,255,0.04); transform:translateY(-3px); }
+
+/* Schwebende Hero-Karte (Wow-Moment + Conversion) */
+.hero-float {
+  position:absolute; z-index:3; right:clamp(24px,5vw,72px); bottom:clamp(64px,9vh,104px);
+  width:280px; padding:24px 26px; border-radius:var(--r-lg);
+  background:rgba(12,14,13,0.42); backdrop-filter:blur(16px) saturate(1.2); -webkit-backdrop-filter:blur(16px) saturate(1.2);
+  border:1px solid rgba(201,169,110,0.32); box-shadow:0 24px 60px rgba(0,0,0,0.4);
+  animation:floatCard 7s ease-in-out 1.6s infinite, fadeUp 1s 1.4s both;
+}
+@keyframes floatCard { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-10px)} }
+.hf-eyebrow { font-size:0.62rem; letter-spacing:0.26em; text-transform:uppercase; color:var(--gold-light); display:block; margin-bottom:14px; }
+.hf-line { display:flex; align-items:center; gap:12px; color:#fff; text-decoration:none; font-size:0.92rem; padding:9px 0; border-top:1px solid rgba(255,255,255,0.12); transition:color 0.25s; }
+.hf-line:first-of-type { border-top:none; }
+.hf-line svg { width:18px; height:18px; color:var(--gold-light); flex-shrink:0; }
+.hf-line:hover { color:var(--gold-light); }
+.hf-line small { display:block; font-size:0.66rem; letter-spacing:0.08em; text-transform:uppercase; color:rgba(255,255,255,0.5); }
+
+.scroll-cue { position:absolute; bottom:30px; left:0; right:0; margin:0 auto; width:max-content; z-index:3; display:flex; flex-direction:column; align-items:center; gap:10px; animation:fadeUp 1s 2s both; }
+.scroll-cue span { writing-mode:vertical-rl; font-size:0.58rem; letter-spacing:0.3em; text-transform:uppercase; color:rgba(255,255,255,0.4); }
+.scroll-line { width:1px; height:62px; background:linear-gradient(to bottom, transparent, rgba(201,169,110,0.7)); animation:spulse 2.6s ease-in-out infinite; }
+@keyframes spulse { 0%,100%{opacity:0.35; transform:scaleY(0.75); transform-origin:top} 50%{opacity:1; transform:scaleY(1); transform-origin:top} }
+@keyframes fadeUp { from{opacity:0; transform:translateY(26px)} to{opacity:1; transform:translateY(0)} }
+
+/* ─── ÜBER UNS ─── */
+#ueber-uns { padding:var(--section) 0; background:var(--cream); position:relative; }
+.about-grid { display:grid; grid-template-columns:1fr 1.05fr; gap:clamp(40px,6vw,84px); align-items:center; }
+.about-img-wrap { position:relative; perspective:1200px; }
+.about-img-inner { position:relative; border-radius:var(--r-lg); overflow:hidden; box-shadow:var(--sh-lg); }
+.about-img { width:100%; height:clamp(420px,52vw,540px); object-fit:cover; object-position:center 20%; }
+.about-img-wrap::after { content:''; position:absolute; inset:22px -22px -22px 22px; border:1px solid rgba(201,169,110,0.45); border-radius:var(--r-lg); z-index:-1; }
+.about-badge { position:absolute; bottom:-26px; left:-26px; background:var(--green); color:#fff; padding:24px 30px; border-radius:var(--r-md); box-shadow:var(--sh-md); transform:translateZ(40px); }
+.badge-num { font-family:Georgia,"Times New Roman",serif; font-size:3rem; color:var(--gold-light); display:block; line-height:1; }
+.badge-lbl { font-size:0.66rem; letter-spacing:0.14em; text-transform:uppercase; opacity:0.75; margin-top:8px; display:block; }
+.about-content p { font-size:1.05rem; line-height:1.9; color:var(--muted); margin-bottom:20px; }
+.about-quote { display:block; font-family:Georgia,"Times New Roman",serif; font-size:1.18rem; font-style:italic; color:var(--gold-dark); border-left:2px solid var(--gold); padding-left:22px; margin:8px 0 28px; line-height:1.65; }
+
+/* ─── WERTE / PHILOSOPHIE ─── */
+#philosophie { padding:0 0 var(--section); background:var(--cream); }
+.phil-head { text-align:center; max-width:680px; margin:0 auto clamp(48px,6vw,68px); }
+.phil-head .eyebrow { display:inline-flex; }
+.phil-head .lead { margin:0 auto; }
+.values { display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(18px,2.4vw,28px); }
+.val { background:#fff; border:1px solid var(--line); border-radius:var(--r-lg); padding:clamp(28px,3vw,40px); text-align:center; box-shadow:var(--sh-sm); transition:transform 0.5s var(--ease), box-shadow 0.5s var(--ease); }
+.val:hover { box-shadow:var(--sh-lg); }
+.val-ic { width:56px; height:56px; margin:0 auto 22px; border-radius:50%; display:flex; align-items:center; justify-content:center; background:linear-gradient(150deg, rgba(201,169,110,0.18), rgba(201,169,110,0.06)); color:var(--gold-dark); }
+.val-ic svg { width:28px; height:28px; }
+.val h3 { font-family:Georgia,"Times New Roman",serif; font-size:1.35rem; font-weight:400; color:var(--green); margin-bottom:12px; }
+.val p { font-size:0.92rem; line-height:1.75; color:var(--muted); }
+
+/* ─── GALERIE ─── */
+#galerie { background:var(--green); padding:var(--section) 0; overflow:hidden; position:relative; }
+#galerie::before { content:''; position:absolute; inset:0; background:radial-gradient(circle at 80% 0%, rgba(201,169,110,0.10), transparent 55%); pointer-events:none; }
+.gal-header { padding:0 clamp(20px,5vw,48px); margin-bottom:48px; max-width:1180px; margin-left:auto; margin-right:auto; }
+.carousel-track {
+  display:flex; gap:18px; padding:0 clamp(20px,5vw,48px) 22px;
+  overflow-x:auto; scroll-snap-type:x mandatory; scroll-behavior:smooth;
+  -webkit-overflow-scrolling:touch; cursor:grab;
+}
+.carousel-track:active { cursor:grabbing; }
+.carousel-track::-webkit-scrollbar { height:3px; }
+.carousel-track::-webkit-scrollbar-track { background:rgba(255,255,255,0.08); }
+.carousel-track::-webkit-scrollbar-thumb { background:var(--gold); border-radius:2px; }
+.ci { flex:0 0 auto; scroll-snap-align:start; position:relative; overflow:hidden; border-radius:var(--r-md); box-shadow:0 18px 44px rgba(0,0,0,0.32); }
+.ci.tall { width:300px; height:430px; }
+.ci.wide { width:500px; height:370px; }
+.ci img { width:100%; height:100%; object-fit:cover; transition:transform 0.8s var(--ease); }
+.ci:hover img { transform:scale(1.07); }
+.ci-cap { position:absolute; inset:0; background:linear-gradient(to top, rgba(6,8,7,0.7) 0%, transparent 52%); display:flex; align-items:flex-end; padding:22px; opacity:0; transition:opacity 0.4s var(--ease); }
+.ci:hover .ci-cap { opacity:1; }
+.ci-cap span { color:#fff; font-size:0.72rem; letter-spacing:0.16em; text-transform:uppercase; }
+.car-controls { display:flex; align-items:center; gap:16px; padding:30px clamp(20px,5vw,48px) 0; max-width:1180px; margin:0 auto; }
+.car-btn { width:52px; height:52px; border:1px solid rgba(255,255,255,0.24); background:transparent; color:#fff; cursor:pointer; font-size:1.1rem; display:flex; align-items:center; justify-content:center; border-radius:50%; transition:all 0.35s var(--ease); }
+.car-btn:hover { background:var(--gold); border-color:var(--gold); color:#111; transform:translateY(-2px); }
+.car-prog { flex:1; height:2px; background:rgba(255,255,255,0.14); position:relative; overflow:hidden; border-radius:2px; }
+.car-prog-bar { position:absolute; left:0; top:0; height:100%; background:var(--gold); width:0%; transition:width 0.25s; }
+
+/* ─── ANGEBOT / PREISE ─── */
+#angebot { padding:var(--section) 0; background:var(--cream-dark); }
+.tabs-bar { display:inline-flex; gap:6px; background:#fff; border:1px solid var(--line); border-radius:50px; padding:6px; margin:6px 0 48px; box-shadow:var(--sh-sm); }
+.tab-btn { background:none; border:none; cursor:pointer; padding:12px 26px; font-family:inherit; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:600; color:var(--muted); border-radius:50px; transition:all 0.35s var(--ease); white-space:nowrap; }
+.tab-btn.active { color:#fff; background:var(--green); box-shadow:0 6px 16px rgba(30,53,48,0.22); }
+.tab-pane { display:none; } .tab-pane.active { display:block; }
+.svc-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:22px; }
+.svc { background:#fff; border:1px solid var(--line); border-radius:var(--r-lg); padding:34px; position:relative; overflow:hidden; box-shadow:var(--sh-sm); transition:transform 0.5s var(--ease), box-shadow 0.5s var(--ease); transform-style:preserve-3d; }
+.svc::before { content:''; position:absolute; top:0; left:0; width:3px; height:0; background:linear-gradient(to bottom, var(--gold), var(--gold-dark)); transition:height 0.5s var(--ease); }
+.svc:hover { box-shadow:var(--sh-lg); }
+.svc:hover::before { height:100%; }
+.svc-name { font-family:Georgia,"Times New Roman",serif; font-size:1.42rem; color:var(--green); margin-bottom:8px; }
+.svc-desc { font-size:0.86rem; color:var(--muted); line-height:1.7; margin-bottom:22px; }
+.price-rows { border-top:1px solid var(--line); padding-top:14px; }
+.pr { display:flex; justify-content:space-between; align-items:center; padding:7px 0; border-bottom:1px solid rgba(0,0,0,0.05); }
+.pr:last-child { border-bottom:none; }
+.pr-dur { font-size:0.82rem; color:var(--muted); }
+.pr-amt { font-family:Georgia,"Times New Roman",serif; font-size:1.3rem; color:var(--gold-dark); font-weight:600; }
+.notice { background:var(--green); color:rgba(255,255,255,0.86); padding:26px 34px; margin-top:34px; border-radius:var(--r-lg); font-size:0.86rem; line-height:1.8; box-shadow:var(--sh-md); }
+.notice strong { color:var(--gold-light); }
+
+/* ─── GUTSCHEIN ─── */
+#gutschein { background:linear-gradient(155deg, var(--green) 0%, #0c0c0c 100%); padding:var(--section) 0; position:relative; overflow:hidden; }
+#gutschein::before { content:''; position:absolute; right:-160px; top:-160px; width:520px; height:520px; border-radius:50%; background:radial-gradient(circle, rgba(201,169,110,0.12) 0%, transparent 70%); }
+.voucher-grid { display:grid; grid-template-columns:1fr 1fr; gap:clamp(40px,5vw,64px); align-items:center; position:relative; }
+.voucher-txt p { color:rgba(255,255,255,0.7); font-size:1.02rem; line-height:1.85; margin-bottom:28px; }
+.vbtns { display:flex; gap:12px; flex-wrap:wrap; }
+.btn-gold-v { background:var(--gold); color:#111; padding:14px 30px; text-decoration:none; font-size:0.73rem; letter-spacing:0.13em; text-transform:uppercase; font-weight:700; border-radius:var(--r-sm); display:inline-block; transition:all 0.35s var(--ease); }
+.btn-gold-v:hover { background:var(--gold-light); transform:translateY(-3px); box-shadow:0 14px 32px rgba(201,169,110,0.32); }
+.btn-outline-v { border:1px solid rgba(255,255,255,0.32); color:#fff; padding:14px 30px; text-decoration:none; font-size:0.73rem; letter-spacing:0.13em; text-transform:uppercase; border-radius:var(--r-sm); display:inline-block; transition:all 0.35s var(--ease); }
+.btn-outline-v:hover { border-color:var(--gold); color:var(--gold); transform:translateY(-3px); }
+.vcard { background:#fff; padding:42px; border-radius:var(--r-lg); position:relative; box-shadow:var(--sh-lg); transform-style:preserve-3d; }
+.vcard::after { content:''; position:absolute; top:14px; left:14px; right:-14px; bottom:-14px; border:1px solid rgba(201,169,110,0.32); border-radius:var(--r-lg); pointer-events:none; z-index:-1; }
+.vcard h3 { font-family:Georgia,"Times New Roman",serif; font-size:1.65rem; color:var(--green); margin-bottom:28px; font-weight:400; }
+.vstep { display:flex; gap:15px; margin-bottom:18px; align-items:flex-start; }
+.vstep-n { width:30px; height:30px; background:linear-gradient(150deg, var(--gold), var(--gold-dark)); color:#111; font-size:0.72rem; font-weight:700; display:flex; align-items:center; justify-content:center; border-radius:50%; flex-shrink:0; margin-top:1px; }
+.vstep-t { font-size:0.86rem; color:var(--text); line-height:1.65; }
+.vstep-t strong { color:var(--green); }
+.vbank { background:var(--cream); padding:16px 18px; margin-top:22px; font-size:0.82rem; line-height:1.9; border-left:2px solid var(--gold); border-radius:0 var(--r-sm) var(--r-sm) 0; }
+
+/* ─── KONTAKT ─── */
+#kontakt { padding:var(--section) 0; background:var(--cream); }
+.contact-grid { display:grid; grid-template-columns:1fr 1.05fr; gap:clamp(40px,5vw,64px); margin-top:48px; }
+.iblock { margin-bottom:30px; }
+.ilbl { font-size:0.66rem; letter-spacing:0.2em; text-transform:uppercase; color:var(--gold-dark); display:block; margin-bottom:9px; font-weight:700; }
+.ival { font-size:0.96rem; color:var(--text); line-height:1.8; }
+.ival a { color:var(--green); text-decoration:none; border-bottom:1px solid transparent; transition:color 0.25s, border-color 0.25s; }
+.ival a:hover { color:var(--gold-dark); border-color:var(--gold); }
+.ival small { color:var(--muted); font-size:0.8rem; }
+.hours { display:grid; grid-template-columns:1fr auto; gap:6px 20px; }
+.hd { font-size:0.86rem; color:var(--muted); }
+.ht { font-size:0.86rem; color:var(--text); text-align:right; }
+.map-a { display:inline-flex; align-items:center; gap:8px; color:var(--green); text-decoration:none; font-size:0.85rem; border-bottom:1px solid rgba(30,53,48,0.3); padding-bottom:2px; margin-top:12px; transition:all 0.3s; }
+.map-a:hover { color:var(--gold-dark); border-color:var(--gold); gap:11px; }
+.transit-txt { font-size:0.83rem; color:var(--muted); line-height:1.75; }
+.contact-card { background:#fff; border:1px solid var(--line); border-radius:var(--r-lg); padding:clamp(28px,3vw,40px); box-shadow:var(--sh-md); }
+.cform { display:flex; flex-direction:column; gap:17px; }
+.fg { display:flex; flex-direction:column; gap:6px; }
+.fl { font-size:0.67rem; letter-spacing:0.14em; text-transform:uppercase; color:var(--muted); font-weight:600; }
+.fi, .ft { border:1px solid rgba(0,0,0,0.14); background:var(--cream); padding:14px 16px; font-family:inherit; font-size:0.92rem; color:var(--text); outline:none; border-radius:var(--r-sm); transition:border-color 0.3s, box-shadow 0.3s, background 0.3s; width:100%; }
+.fi:focus, .ft:focus { border-color:var(--gold); background:#fff; box-shadow:0 0 0 3px rgba(201,169,110,0.16); }
+.ft { resize:vertical; min-height:120px; }
+.fck { display:flex; gap:11px; align-items:flex-start; }
+.fck input { width:16px; height:16px; margin-top:3px; flex-shrink:0; accent-color:var(--green); }
+.fck label { font-size:0.78rem; color:var(--muted); line-height:1.55; }
+.fck a { color:var(--green); }
+.form-hint { font-size:0.74rem; color:var(--muted); line-height:1.5; margin-top:-4px; }
+.btn-sub { background:var(--green); color:#fff; border:none; padding:16px 40px; font-family:inherit; font-size:0.74rem; letter-spacing:0.14em; text-transform:uppercase; font-weight:600; cursor:pointer; border-radius:var(--r-sm); transition:all 0.35s var(--ease); align-self:flex-start; }
+.btn-sub:hover { background:var(--gold-dark); transform:translateY(-2px); box-shadow:0 12px 28px rgba(160,120,64,0.3); }
+.btn-sub:disabled { cursor:not-allowed; opacity:0.68; transform:none; box-shadow:none; }
+.form-ok { background:#e8f5e9; color:#256b2a; padding:14px 16px; font-size:0.85rem; line-height:1.6; white-space:pre-line; display:none; margin-top:4px; border-radius:var(--r-sm); }
+.form-ok.error { background:#fff2f0; color:#8a1f11; border:1px solid rgba(138,31,17,0.16); }
+.hp-field { position:absolute; left:-9999px; width:1px; height:1px; overflow:hidden; }
+
+.map-section { margin-top:60px; background:#fff; border:1px solid var(--line); border-radius:var(--r-lg); box-shadow:var(--sh-md); overflow:hidden; }
+.map-copy { padding:32px clamp(24px,3vw,36px) 24px; }
+.map-copy h3 { font-family:Georgia,"Times New Roman",serif; font-size:1.7rem; font-weight:400; color:var(--green); margin-bottom:10px; }
+.map-copy p { color:var(--muted); font-size:0.95rem; line-height:1.75; max-width:720px; }
+.map-frame { position:relative; min-height:400px; background:linear-gradient(135deg, rgba(30,53,48,0.94), rgba(12,12,12,0.88)), url('assets/images/studio-empfang.jpg') center / cover no-repeat; display:flex; align-items:center; justify-content:center; padding:30px; }
+.map-frame.is-loaded { display:block; min-height:0; padding:0; background:#fff; }
+.map-consent { width:min(560px,100%); background:rgba(248,244,238,0.95); border:1px solid rgba(201,169,110,0.34); border-radius:var(--r-md); padding:30px; text-align:center; box-shadow:0 20px 50px rgba(0,0,0,0.2); }
+.map-consent p { color:var(--text); font-size:0.94rem; line-height:1.7; margin-bottom:20px; }
+.map-load { background:var(--gold); color:#111; border:none; padding:14px 26px; font-family:inherit; font-size:0.72rem; letter-spacing:0.13em; text-transform:uppercase; font-weight:700; cursor:pointer; border-radius:var(--r-sm); transition:all 0.35s var(--ease); }
+.map-load:hover, .map-load:focus-visible { background:var(--gold-light); transform:translateY(-2px); }
+.map-frame iframe { width:100%; height:400px; border:0; display:block; }
+.map-actions { padding:0 clamp(24px,3vw,36px) 30px; }
+
+/* ─── RECHTLICHES + FOOTER ─── */
+#rechtliches { background:#0c0c0c; color:rgba(255,255,255,0.5); padding:78px 0; }
+.impr-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:46px; }
+.impr-col h4 { font-family:Georgia,"Times New Roman",serif; font-size:1.05rem; color:var(--gold-light); margin-bottom:16px; font-weight:400; }
+.impr-col p { font-size:0.8rem; line-height:1.95; }
+.impr-col a { color:rgba(255,255,255,0.6); border-bottom:1px solid rgba(201,169,110,0.3); text-decoration:none; transition:color 0.25s; }
+.impr-col a:hover { color:var(--gold-light); }
+footer { background:#080808; padding:26px clamp(20px,5vw,48px); display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px; }
+.foot-logo { font-family:Georgia,"Times New Roman",serif; font-size:0.98rem; color:rgba(255,255,255,0.45); }
+.foot-logo em { font-style:normal; color:var(--gold); }
+.foot-copy { font-size:0.7rem; color:rgba(255,255,255,0.28); }
+.foot-links { display:flex; gap:18px; flex-wrap:wrap; justify-content:center; }
+.foot-links a { color:rgba(255,255,255,0.62); text-decoration:none; font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; transition:color 0.25s; }
+.foot-links a:hover { color:var(--gold); }
+
+/* ─── FAB WhatsApp ─── */
+.fab-wa { position:fixed; bottom:104px; right:26px; width:54px; height:54px; border-radius:50%; background:#25D366; display:flex; align-items:center; justify-content:center; text-decoration:none; z-index:500; box-shadow:0 6px 22px rgba(37,211,102,0.42); transition:transform 0.35s var(--ease); }
+.fab-wa:hover { transform:scale(1.1); }
+.fab-wa svg { width:26px; height:26px; fill:#fff; }
+
+/* ─── CHAT ─── */
+.chat-wrap { position:fixed; bottom:26px; right:26px; z-index:600; }
+.chat-trig { width:54px; height:54px; border-radius:50%; background:var(--green); border:none; cursor:pointer; display:flex; align-items:center; justify-content:center; box-shadow:0 6px 24px rgba(30,53,48,0.45); transition:all 0.35s var(--ease); position:relative; }
+.chat-trig:hover { background:var(--green-light); transform:scale(1.07); }
+.chat-trig svg { width:23px; height:23px; fill:#fff; transition:transform 0.35s var(--ease); }
+.chat-trig.open svg { transform:rotate(45deg); }
+.cdot { position:absolute; top:-3px; right:-3px; width:17px; height:17px; border-radius:50%; background:var(--gold); font-size:0.56rem; color:#111; font-weight:700; display:flex; align-items:center; justify-content:center; }
+.chat-win { position:absolute; bottom:66px; right:0; width:372px; background:#fff; border-radius:var(--r-lg); box-shadow:0 24px 64px rgba(0,0,0,0.26); display:none; flex-direction:column; max-height:560px; overflow:hidden; animation:cslide 0.35s var(--ease); }
+.chat-win.open { display:flex; }
+@keyframes cslide { from{opacity:0; transform:translateY(16px)} to{opacity:1; transform:translateY(0)} }
+.chat-hd { background:var(--green); padding:15px 18px; display:flex; align-items:center; gap:11px; color:#fff; }
+.chat-av { width:40px; height:40px; border-radius:50%; background:linear-gradient(150deg, var(--gold), var(--gold-dark)); display:flex; align-items:center; justify-content:center; font-size:1.1rem; flex-shrink:0; }
+.chat-hd-info { flex:1; }
+.chat-hd-info h4 { font-size:0.9rem; font-weight:600; }
+.chat-hd-info p { font-size:0.68rem; opacity:0.72; }
+.chat-close { width:32px; height:32px; border-radius:50%; border:1px solid rgba(255,255,255,0.24); background:transparent; color:#fff; font-size:1.1rem; line-height:1; cursor:pointer; transition:all 0.25s; }
+.chat-close:hover { background:rgba(255,255,255,0.12); border-color:rgba(255,255,255,0.45); }
+.odot { width:7px; height:7px; border-radius:50%; background:#4CAF50; display:inline-block; margin-right:5px; }
+.chat-msgs { flex:1; overflow-y:auto; padding:16px; display:flex; flex-direction:column; gap:10px; min-height:200px; max-height:360px; }
+.cm { max-width:90%; padding:11px 14px; border-radius:14px; font-size:0.85rem; line-height:1.6; white-space:pre-wrap; word-break:break-word; }
+.cm-bot { background:#f4f0ea; color:var(--text); align-self:flex-start; border-bottom-left-radius:3px; }
+.cm-user { background:var(--green); color:#fff; align-self:flex-end; border-bottom-right-radius:3px; }
+.typing-w { background:#f4f0ea; padding:11px 14px; border-radius:14px; align-self:flex-start; }
+.tdots { display:flex; gap:4px; }
+.td { width:6px; height:6px; background:#bbb; border-radius:50%; animation:tbounce 1.4s infinite; }
+.td:nth-child(2) { animation-delay:0.2s; } .td:nth-child(3) { animation-delay:0.4s; }
+@keyframes tbounce { 0%,60%,100%{transform:translateY(0)} 30%{transform:translateY(-6px)} }
+.qbtns { display:flex; flex-wrap:wrap; gap:6px; padding:0 16px 10px; }
+.qbtn { background:none; border:1px solid rgba(30,53,48,0.22); color:var(--green); padding:7px 13px; font-size:0.72rem; border-radius:18px; cursor:pointer; font-family:inherit; transition:all 0.25s; white-space:nowrap; }
+.qbtn:hover { background:var(--green); color:#fff; border-color:var(--green); }
+.chat-note { margin:0 16px 10px; padding:10px 12px; background:#fff8ec; border:1px solid rgba(201,169,110,0.3); color:var(--muted); font-size:0.7rem; line-height:1.5; border-radius:var(--r-md); }
+.chat-in-area { display:flex; gap:8px; padding:13px 16px; border-top:1px solid rgba(0,0,0,0.08); }
+.chat-in { flex:1; border:1px solid rgba(0,0,0,0.14); border-radius:22px; padding:9px 15px; font-family:inherit; font-size:0.85rem; color:var(--text); outline:none; transition:border-color 0.3s; }
+.chat-in:focus { border-color:var(--green); }
+.chat-send { width:38px; height:38px; border-radius:50%; background:var(--green); border:none; cursor:pointer; display:flex; align-items:center; justify-content:center; flex-shrink:0; transition:background 0.3s; }
+.chat-send:hover { background:var(--gold-dark); }
+.chat-send svg { width:15px; height:15px; fill:#fff; }
+
+/* ─── MOBILE STICKY CTA ─── */
+.mobile-bar { position:fixed; left:0; right:0; bottom:0; z-index:550; display:none; grid-template-columns:1fr 1fr 1.2fr; gap:1px; background:rgba(201,169,110,0.3); transform:translateY(110%); transition:transform 0.45s var(--ease); box-shadow:0 -6px 24px rgba(0,0,0,0.14); }
+.mobile-bar.is-visible { transform:translateY(0); }
+.mobile-bar a { display:flex; flex-direction:column; align-items:center; justify-content:center; gap:3px; padding:11px 6px; text-decoration:none; background:#fff; color:var(--green); font-size:0.66rem; letter-spacing:0.04em; font-weight:600; text-transform:uppercase; }
+.mobile-bar a.mb-primary { background:var(--green); color:#fff; }
+.mobile-bar a.mb-wa { background:#25D366; color:#fff; }
+.mobile-bar svg { width:20px; height:20px; }
+
+/* ─── RESPONSIVE ─── */
+@media (max-width:980px) {
+  .about-grid { grid-template-columns:1fr; gap:64px; }
+  .about-img-wrap::after { inset:18px -18px -18px 18px; }
+  .values { grid-template-columns:1fr; max-width:440px; margin:0 auto; }
+  .voucher-grid, .contact-grid { grid-template-columns:1fr; }
+}
+@media (max-width:900px) {
+  .nav-links { display:none; }
+  .nav-links.mob-open { display:flex; flex-direction:column; position:fixed; inset:0; background:rgba(8,8,8,0.98); justify-content:center; align-items:center; gap:40px; z-index:999; }
+  .nav-links.mob-open a { font-size:1.15rem; letter-spacing:0.2em; }
+  .nav-links.mob-open .nav-cta { padding:14px 34px; }
+  .burger { display:flex; z-index:1001; }
+  .hero-float { display:none; }
+  .scroll-cue { display:none; }
+  .hero-body { padding-bottom:150px; }
+  .hero-deco { width:46vw; top:7%; }
+  .impr-grid { grid-template-columns:1fr; gap:34px; }
+  .ci.tall { width:230px; height:330px; } .ci.wide { width:330px; height:250px; }
+  footer { flex-direction:column; text-align:center; }
+  .mobile-bar { display:grid; }
+  .fab-wa { display:none; }
+  .chat-wrap { bottom:84px; }
+  .chat-win { width:min(372px, calc(100vw - 32px)); right:-6px; max-height:80vh; }
+  .chat-msgs { max-height:44vh; }
+  .about-badge { bottom:-18px; left:-18px; padding:20px 24px; }
+}
+@media (max-width:480px) {
+  .hero-btns { width:100%; }
+  .hero-btns .btn-gold, .hero-btns .btn-ghost { flex:1; text-align:center; padding:15px 20px; }
+  .tabs-bar { width:100%; justify-content:center; }
+  .tab-btn { padding:11px 16px; font-size:0.66rem; }
+}
+
+/* ─── REDUCED MOTION ─── */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior:auto; }
+  *, *::before, *::after {
+    animation-duration:0.001ms !important; animation-iteration-count:1 !important;
+    transition-duration:0.001ms !important; scroll-behavior:auto !important;
+  }
+  .reveal { opacity:1 !important; transform:none !important; }
+  .hero-img { animation:none; transform:none; }
+  .hero-media, .hero-deco { transform:none !important; }
+  .hero-float { animation:none; }
+  .scroll-line { animation:none; }
+}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+<!-- Wiederverwendbare Linien-Ornamente (Lotus / Icons) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="ic-lotus" viewBox="0 0 120 70">
+    <g fill="none" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round">
+      <path d="M60 64 C56 44 56 22 60 7 C64 22 64 44 60 64 Z"/>
+      <path d="M60 64 C50 47 40 31 30 23 C35 41 44 55 60 64 Z"/>
+      <path d="M60 64 C70 47 80 31 90 23 C85 41 76 55 60 64 Z"/>
+      <path d="M60 64 C45 53 25 45 9 43 C25 55 43 62 60 64 Z"/>
+      <path d="M60 64 C75 53 95 45 111 43 C95 55 77 62 60 64 Z"/>
+    </g>
+  </symbol>
+  <symbol id="ic-heart" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M12 20.5S3.5 15 3.5 8.8A4.3 4.3 0 0 1 12 6.6a4.3 4.3 0 0 1 8.5 2.2C20.5 15 12 20.5 12 20.5Z"/>
+  </symbol>
+  <symbol id="ic-shield" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2.5 20 5.3v6.2c0 5-3.4 8.4-8 10.5-4.6-2.1-8-5.5-8-10.5V5.3L12 2.5Z"/>
+      <path d="M8.5 12l2.5 2.5 4.5-5"/>
+    </g>
+  </symbol>
+  <symbol id="ic-phone" viewBox="0 0 24 24">
+    <path fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" d="M6.6 3.5H9l1.4 4-1.8 1.3a12 12 0 0 0 5.6 5.6l1.3-1.8 4 1.4v2.4a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2Z"/>
+  </symbol>
+  <symbol id="ic-wa" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.16-.17.2-.35.22-.64.08-.3-.15-1.26-.47-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.52.15-.18.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.61-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.48 0 1.46 1.07 2.88 1.22 3.07.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.89-9.88 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 0 1 2.89 6.99c0 5.45-4.44 9.88-9.89 9.88m8.41-18.3A11.81 11.81 0 0 0 12.05 0C5.5 0 .16 5.34.16 11.9c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 0 0 5.69 1.45h.01c6.55 0 11.89-5.34 11.89-11.9 0-3.18-1.24-6.17-3.49-8.42"/>
+  </symbol>
+  <symbol id="ic-pin" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 21s7-5.5 7-11a7 7 0 1 0-14 0c0 5.5 7 11 7 11Z"/>
+      <circle cx="12" cy="10" r="2.5"/>
+    </g>
+  </symbol>
+</svg>
+
+<header>
+<nav id="nav" aria-label="Hauptnavigation">
+  <a href="#" class="logo" aria-label="Anchaya Thai Massage – Startseite">
+    <svg aria-hidden="true"><use href="#ic-lotus"/></svg>
+    <span>Anchaya <em>Thai Massage</em></span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#ueber-uns" onclick="closeNav()">Über uns</a></li>
+    <li><a href="#galerie" onclick="closeNav()">Galerie</a></li>
+    <li><a href="#angebot" onclick="closeNav()">Preise</a></li>
+    <li><a href="#gutschein" onclick="closeNav()">Gutschein</a></li>
+    <li><a href="#kontakt" onclick="closeNav()" class="nav-cta">Termin anfragen</a></li>
+  </ul>
+  <button class="burger" id="burger" type="button" aria-label="Menü öffnen" aria-expanded="false" aria-controls="navLinks" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+</header>
+
+<main id="main">
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-media" data-speed="0.14">
+    <div class="hero-img"></div>
+  </div>
+  <div class="hero-ov1"></div>
+  <div class="hero-ov2"></div>
+  <div class="hero-deco" data-speed="0.32" aria-hidden="true">
+    <svg viewBox="0 0 120 70"><use href="#ic-lotus"/></svg>
+  </div>
+  <div class="hero-body">
+    <div class="hero-tag">
+      <div class="htag-line"></div>
+      <span class="htag-txt">München &middot; Schwabing &middot; Seit 2009</span>
+    </div>
+    <p class="hero-thai">สวัสดีค่ะ &mdash; Willkommen</p>
+    <h1 class="hero-h1" id="hero-title">Anchaya<br><em>Thai Massage</em></h1>
+    <p class="hero-p">Traditionelle Thai Massage in München-Schwabing. Ein ruhiger, privater Rückzugsort, an dem achtsame Berührung zur Entspannung beiträgt und Ihr Wohlbefinden im Alltag unterstützt.</p>
+    <div class="hero-btns">
+      <a href="#kontakt" class="btn-gold">Termin anfragen</a>
+      <a href="#angebot" class="btn-ghost">Preise &amp; Angebote</a>
+    </div>
+  </div>
+  <aside class="hero-float" aria-label="Direkter Kontakt">
+    <span class="hf-eyebrow">Direkt buchen</span>
+    <a href="tel:08912595098" class="hf-line">
+      <svg aria-hidden="true"><use href="#ic-phone"/></svg>
+      <span>089 / 12595098<small>Anrufen</small></span>
+    </a>
+    <a href="https://wa.me/4917664758297" target="_blank" rel="noopener noreferrer" class="hf-line">
+      <svg aria-hidden="true"><use href="#ic-wa"/></svg>
+      <span>0176 / 64758297<small>WhatsApp</small></span>
+    </a>
+  </aside>
+  <div class="scroll-cue" aria-hidden="true">
+    <span>Entdecken</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- ═══ ÜBER UNS ═══ -->
+<section id="ueber-uns">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-img-wrap tilt reveal">
+        <div class="about-img-inner">
+          <img src="assets/images/studio-empfang.jpg" alt="Ruhiger Empfangsbereich des Anchaya Thai Massage Studios" class="about-img" width="640" height="540" loading="lazy" decoding="async">
+        </div>
+        <div class="about-badge">
+          <span class="badge-num">15+</span>
+          <span class="badge-lbl">Jahre Erfahrung</span>
+        </div>
+      </div>
+      <div class="about-content">
+        <span class="eyebrow reveal">Über uns</span>
+        <h2 class="sec-title reveal" style="--d:.08s">Traditionelle<br><em>Thai Massage</em></h2>
+        <p class="reveal" style="--d:.16s">Thai Massage verbindet ruhige Drucktechniken, sanfte Dehnungen und achtsame Berührung. Sie kann zur Entspannung beitragen und das Wohlbefinden im Alltag unterstützen.</p>
+        <blockquote class="about-quote reveal" style="--d:.24s">„Thai Massage ist mehr als Berührung — sie ist ein Dialog zwischen zwei Menschen."</blockquote>
+        <p class="reveal" style="--d:.32s">Gönnen Sie sich eine Auszeit und kehren Sie mit mehr Ruhe und Balance in Ihren Alltag zurück. In unserem Studio in München-Schwabing steht eine seriöse, professionelle Massage in angenehmer Atmosphäre im Mittelpunkt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PHILOSOPHIE / WERTE ═══ -->
+<section id="philosophie" aria-labelledby="phil-title">
+  <div class="container">
+    <div class="phil-head">
+      <span class="eyebrow reveal">Was Sie erwartet</span>
+      <h2 class="sec-title reveal" id="phil-title" style="--d:.08s">Ruhe, die man <em>spürt</em></h2>
+      <p class="lead reveal" style="--d:.16s">Jede Behandlung ist ein bewusster Moment für Sie allein — vom ersten Gespräch bis zur letzten ruhigen Berührung.</p>
+      <div class="divider reveal" style="--d:.24s; margin-top:28px"><span class="dv-line"></span><svg aria-hidden="true"><use href="#ic-lotus"/></svg><span class="dv-line"></span></div>
+    </div>
+    <div class="values">
+      <article class="val reveal" style="--d:.08s">
+        <div class="val-ic"><svg aria-hidden="true"><use href="#ic-heart"/></svg></div>
+        <h3>Achtsame Berührung</h3>
+        <p>Jede Massage beginnt mit Zuhören. Wir nehmen uns Zeit und gehen ruhig auf Ihre Wünsche ein.</p>
+      </article>
+      <article class="val reveal" style="--d:.18s">
+        <div class="val-ic"><svg aria-hidden="true"><use href="#ic-shield"/></svg></div>
+        <h3>Ruhe &amp; Privatsphäre</h3>
+        <p>Ein geschützter, gepflegter Raum nur für Sie — ausschließlich seriöse, professionelle Massagen.</p>
+      </article>
+      <article class="val reveal" style="--d:.28s">
+        <div class="val-ic"><svg aria-hidden="true"><use href="#ic-lotus"/></svg></div>
+        <h3>Echte Thai-Tradition</h3>
+        <p>Techniken, die über Generationen weitergegeben wurden — angewandt mit Erfahrung seit 2009.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GALERIE ═══ -->
+<section id="galerie" class="on-dark" aria-labelledby="gal-title">
+  <div class="gal-header">
+    <span class="eyebrow reveal">Unser Studio</span>
+    <h2 class="sec-title reveal" id="gal-title" style="--d:.08s">Einblicke in<br><em>Ihren Wohlfühlort</em></h2>
+  </div>
+  <div class="carousel-track reveal" id="carouselTrack" style="--d:.12s" role="region" aria-label="Bildergalerie Studio, horizontal scrollbar">
+    <div class="ci wide">
+      <img src="assets/images/galerie-wartebereich.jpg" alt="Wartebereich mit Lichtvorhang" width="500" height="370" loading="lazy" decoding="async">
+      <div class="ci-cap"><span>Wartebereich</span></div>
+    </div>
+    <div class="ci tall">
+      <img src="assets/images/galerie-massage-liege.jpg" alt="Dekoratives Buddha-Kunstwerk im Studio" width="300" height="430" loading="lazy" decoding="async">
+      <div class="ci-cap"><span>Atmosphäre</span></div>
+    </div>
+    <div class="ci wide">
+      <img src="assets/images/galerie-raum-detail.jpg" alt="Massageraum mit dekorativen Schwänen" width="500" height="370" loading="lazy" decoding="async">
+      <div class="ci-cap"><span>Massageraum</span></div>
+    </div>
+    <div class="ci tall">
+      <img src="assets/images/galerie-behandlung.jpg" alt="Ruhiger Lounge-Bereich" width="300" height="430" loading="lazy" decoding="async">
+      <div class="ci-cap"><span>Lounge</span></div>
+    </div>
+    <div class="ci wide">
+      <img src="assets/images/galerie-lounge.jpg" alt="Produkte und Shop-Auswahl" width="500" height="370" loading="lazy" decoding="async">
+      <div class="ci-cap"><span>Shop &amp; Produkte</span></div>
+    </div>
+    <div class="ci tall">
+      <img src="assets/images/galerie-handtuecher.jpg" alt="Liebevolles Handtuch-Detail" width="300" height="430" loading="lazy" decoding="async">
+      <div class="ci-cap"><span>Details</span></div>
+    </div>
+  </div>
+  <div class="car-controls">
+    <button class="car-btn" type="button" aria-label="Galerie zurück" onclick="scrollCar(-1)">&#8592;</button>
+    <button class="car-btn" type="button" aria-label="Galerie weiter" onclick="scrollCar(1)">&#8594;</button>
+    <div class="car-prog" aria-hidden="true"><div class="car-prog-bar" id="progBar"></div></div>
+  </div>
+</section>
+
+<!-- ═══ ANGEBOT / PREISE ═══ -->
+<section id="angebot" aria-labelledby="ang-title">
+  <div class="container">
+    <span class="eyebrow reveal">Angebot &amp; Preise</span>
+    <h2 class="sec-title reveal" id="ang-title" style="--d:.08s">Unsere <em>Massagen</em></h2>
+    <div class="tabs-bar reveal" style="--d:.14s" role="tablist" aria-label="Preisansicht">
+      <button class="tab-btn active" id="tabbtn-e" role="tab" aria-selected="true" aria-controls="tab-e" onclick="switchTab('e',this)">Einzelpreise</button>
+      <button class="tab-btn" id="tabbtn-p" role="tab" aria-selected="false" aria-controls="tab-p" tabindex="-1" onclick="switchTab('p',this)">6er-Paket &middot; 5 zahlen, 6. gratis</button>
+    </div>
+    <div class="tab-pane active" id="tab-e" role="tabpanel" aria-labelledby="tabbtn-e" tabindex="0">
+      <div class="svc-grid" id="singlePriceGrid"></div>
+    </div>
+    <div class="tab-pane" id="tab-p" role="tabpanel" aria-labelledby="tabbtn-p" tabindex="0" hidden>
+      <div class="svc-grid" id="packagePriceGrid"></div>
+    </div>
+    <div class="notice reveal">
+      <strong>Terminabsage:</strong> Bitte bis spätestens 10:00 Uhr des betreffenden Tages absagen, damit wir Ihren Termin anderweitig vergeben können. &nbsp;&middot;&nbsp;
+      <strong>Wir bieten ausschließlich seriöse, professionelle Massagen an.</strong>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ GUTSCHEIN ═══ -->
+<section id="gutschein" class="on-dark" aria-labelledby="gut-title">
+  <div class="container">
+    <div class="voucher-grid">
+      <div class="voucher-txt">
+        <span class="eyebrow reveal">Gutscheine</span>
+        <h2 class="sec-title reveal" id="gut-title" style="--d:.08s">Das perfekte <em>Geschenk</em></h2>
+        <p class="reveal" style="--d:.16s">Verschenken Sie Momente der tiefen Entspannung. Unsere Gutscheine eignen sich für jeden Anlass &mdash; Geburtstag, Jubiläum, Weihnachten oder als herzliches Dankeschön.</p>
+        <div class="vbtns reveal" style="--d:.24s">
+          <a href="mailto:info@anchaya-thai-massage.de?subject=Gutschein%20Bestellung" class="btn-outline-v">Per E-Mail bestellen</a>
+          <a href="https://wa.me/4917664758297?text=Hallo%2C%20ich%20m%C3%B6chte%20einen%20Gutschein%20bestellen." target="_blank" rel="noopener noreferrer" class="btn-gold-v">Per WhatsApp</a>
+        </div>
+      </div>
+      <div class="vcard tilt reveal" style="--d:.16s">
+        <h3>Gutschein in 4 Schritten</h3>
+        <div class="vstep"><div class="vstep-n">1</div><div class="vstep-t">Wunsch senden an <strong>info@anchaya-thai-massage.de</strong> oder WhatsApp <strong>0176 / 64758297</strong></div></div>
+        <div class="vstep"><div class="vstep-n">2</div><div class="vstep-t">Lieferadresse und gewünschten Gutscheinwert mitteilen</div></div>
+        <div class="vstep"><div class="vstep-n">3</div><div class="vstep-t">Betrag überweisen (+ 3 &euro; Versandkosten) mit Verwendungszweck</div></div>
+        <div class="vstep"><div class="vstep-n">4</div><div class="vstep-t">Wir senden Ihnen den schönen Gutschein per Post zu</div></div>
+        <div class="vbank"><strong>Bankverbindung</strong><br>Yupin Herrmann &middot; Sparkasse<br>IBAN: DE59 7015 0000 1003 4598 39</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ KONTAKT ═══ -->
+<section id="kontakt" aria-labelledby="kon-title">
+  <div class="container">
+    <span class="eyebrow reveal">Kontakt &amp; Anfahrt</span>
+    <h2 class="sec-title reveal" id="kon-title" style="--d:.08s">Wir freuen uns<br><em>auf Sie</em></h2>
+    <div class="contact-grid">
+      <div class="reveal" style="--d:.12s">
+        <div class="iblock">
+          <span class="ilbl">Adresse</span>
+          <div class="ival">ANCHAYA THAI MASSAGE<br>Karl-Köglsperger-Str. 11<br>80939 München<br><small>Unser Studio befindet sich im Innenhof &mdash; zwischen Fahrschule Bavaria und Pizzeria Fellini. Bitte gehen Sie in den Innenhof. Der Eingang befindet sich nicht direkt an der Straße.</small></div>
+          <a href="https://www.google.com/maps/dir/?api=1&destination=48.201520,11.607080" target="_blank" rel="noopener noreferrer" class="map-a">&#8599; Route zum Innenhof öffnen</a>
+        </div>
+        <div class="iblock">
+          <span class="ilbl">Telefon &amp; WhatsApp</span>
+          <div class="ival"><a href="tel:08912595098">089 / 12595098</a><br><a href="https://wa.me/4917664758297" target="_blank" rel="noopener noreferrer">0176 / 64758297</a></div>
+        </div>
+        <div class="iblock">
+          <span class="ilbl">E-Mail</span>
+          <div class="ival"><a href="mailto:info@anchaya-thai-massage.de">info@anchaya-thai-massage.de</a></div>
+        </div>
+        <div class="iblock">
+          <span class="ilbl">Öffnungszeiten</span>
+          <div class="ival">
+            <div class="hours">
+              <span class="hd">Montag bis Freitag</span><span class="ht">10:00 bis 19:00 Uhr</span>
+              <span class="hd">Samstag</span><span class="ht">10:00 bis 18:00 Uhr</span>
+              <span class="hd">Sonntag und Feiertag</span><span class="ht">geschlossen</span>
+            </div>
+          </div>
+        </div>
+        <div class="iblock">
+          <span class="ilbl">Anfahrt &Ouml;PNV</span>
+          <div class="transit-txt">🚇 U6 Kieferngarten: ca. 5 Minuten Fußweg<br>🚌 Bus 140, 170, 171<br>Haltestelle Paul-Hindemith-Allee<br>Hinweis: Unser Studio befindet sich im Innenhof &mdash; zwischen Fahrschule Bavaria und Pizzeria Fellini. Bitte gehen Sie in den Innenhof; der Eingang befindet sich nicht direkt an der Straße.</div>
+        </div>
+      </div>
+      <div class="reveal" style="--d:.2s">
+        <div class="contact-card">
+          <form class="cform" id="cForm" onsubmit="doForm(event)">
+            <div class="fg"><label class="fl" for="name">Ihr Name</label><input id="name" name="name" type="text" class="fi" required autocomplete="name" placeholder="Maria Mustermann"></div>
+            <div class="fg"><label class="fl" for="email">E-Mail-Adresse</label><input id="email" name="email" type="email" class="fi" required autocomplete="email" placeholder="ihre@email.de"></div>
+            <div class="fg"><label class="fl" for="phone">Telefonnummer optional</label><input id="phone" name="phone" type="tel" class="fi" autocomplete="tel" placeholder="089 / 123456"></div>
+            <div class="fg"><label class="fl" for="message">Ihre Nachricht</label><textarea id="message" name="message" class="ft" rows="5" required placeholder="Ich möchte einen Termin für…"></textarea></div>
+            <div class="hp-field" aria-hidden="true"><label for="website">Website</label><input type="text" id="website" name="website" tabindex="-1" autocomplete="off"></div>
+            <div class="fck"><input type="checkbox" id="dsgvo" name="dsgvo" value="akzeptiert" required><label for="dsgvo">Ich habe die <a href="datenschutz.html">Datenschutzerklärung</a> gelesen und stimme der Kontaktaufnahme zu.</label></div>
+            <p class="form-hint">Bitte übermitteln Sie keine sensiblen Gesundheitsdaten über das Formular.</p>
+            <button type="submit" class="btn-sub">Nachricht senden</button>
+            <div class="form-ok" id="formOk" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="map-section reveal" aria-labelledby="map-title">
+      <div class="map-copy">
+        <h3 id="map-title">So finden Sie uns</h3>
+        <p>Sie finden uns in der Karl-Köglsperger-Str. 11, 80939 München. Das Studio befindet sich im Innenhof &mdash; zwischen Fahrschule Bavaria und Pizzeria Fellini. Bitte gehen Sie in den Innenhof. Der Eingang befindet sich nicht direkt an der Straße.</p>
+      </div>
+      <div class="map-frame" id="googleMapFrame">
+        <div class="map-consent" id="googleMapConsent">
+          <p>Mit dem Laden der Karte akzeptieren Sie, dass Daten an Google Maps übertragen werden.</p>
+          <button type="button" class="map-load" onclick="loadGoogleMap()">Google Maps Karte laden</button>
+        </div>
+      </div>
+      <div class="map-actions">
+        <a href="https://www.google.com/maps/dir/?api=1&destination=48.201520,11.607080" target="_blank" rel="noopener noreferrer" class="map-a">&#8599; Route zum Innenhof öffnen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ RECHTLICHES ═══ -->
+<section id="rechtliches" aria-label="Rechtliche Hinweise">
+  <div class="container">
+    <div class="impr-grid">
+      <div class="impr-col">
+        <h4>Kontakt</h4>
+        <p><strong style="color:rgba(255,255,255,0.78)">ANCHAYA THAI MASSAGE</strong><br>Karl-Köglsperger-Str. 11<br>80939 München<br><br>Tel: <a href="tel:08912595098">089 / 12595098</a><br>E-Mail: <a href="mailto:info@anchaya-thai-massage.de">info@anchaya-thai-massage.de</a></p>
+      </div>
+      <div class="impr-col">
+        <h4>Rechtliches</h4>
+        <p>Die vollständigen Anbieterkennzeichnungen und Datenschutzhinweise finden Sie auf den separaten Seiten <a href="impressum.html">Impressum</a> und <a href="datenschutz.html">Datenschutz</a>.</p>
+      </div>
+      <div class="impr-col">
+        <h4>Hinweis</h4>
+        <p>Unsere Angebote sind Wellness-Massagen und ersetzen keine medizinische oder therapeutische Behandlung. Bei gesundheitlichen Fragen wenden Sie sich bitte an eine ärztliche oder therapeutische Fachperson.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="foot-logo">Anchaya <em>Thai Massage</em></div>
+  <div class="foot-links"><a href="impressum.html">Impressum</a><a href="datenschutz.html">Datenschutz</a></div>
+  <div class="foot-copy">&copy; 2026 ANCHAYA THAI MASSAGE &middot; Karl-Köglsperger-Str. 11, 80939 München</div>
+</footer>
+
+<!-- WhatsApp-FAB (Desktop) -->
+<a href="https://wa.me/4917664758297" class="fab-wa" target="_blank" rel="noopener noreferrer" title="WhatsApp schreiben" aria-label="WhatsApp schreiben">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><use href="#ic-wa"/></svg>
+</a>
+
+<!-- Mobile Sticky-CTA -->
+<nav class="mobile-bar" id="mobileBar" aria-label="Schnellkontakt">
+  <a href="tel:08912595098"><svg aria-hidden="true"><use href="#ic-phone"/></svg>Anrufen</a>
+  <a href="https://wa.me/4917664758297" target="_blank" rel="noopener noreferrer" class="mb-wa"><svg aria-hidden="true"><use href="#ic-wa"/></svg>WhatsApp</a>
+  <a href="#kontakt" class="mb-primary"><svg aria-hidden="true"><use href="#ic-pin"/></svg>Termin anfragen</a>
+</nav>
+
+<!-- Website-Assistent: lokal im Browser, ohne externen Dienst -->
+<div class="chat-wrap">
+  <div class="chat-win" id="chatWin" role="dialog" aria-label="Anchaya Assistent" aria-modal="false">
+    <div class="chat-hd">
+      <div class="chat-av" aria-hidden="true">🌸</div>
+      <div class="chat-hd-info">
+        <h4>Anchaya Assistent</h4>
+        <p><span class="odot"></span>Direkt verfügbar</p>
+      </div>
+      <button class="chat-close" type="button" aria-label="Chat schließen" onclick="toggleChat()">×</button>
+    </div>
+    <div class="chat-msgs" id="chatMsgs">
+      <div class="cm cm-bot">Sawadee ka! 🙏
+
+Willkommen bei Anchaya Thai Massage in München. Ich helfe Ihnen gerne bei allen Fragen rund um unsere Massagen, Preise, Öffnungszeiten und Terminbuchung.
+
+Was kann ich für Sie tun?</div>
+    </div>
+    <div class="qbtns" id="qbtns">
+      <button class="qbtn" onclick="sendQ('Was ist Thai Massage?')">Was ist Thai Massage?</button>
+      <button class="qbtn" onclick="sendQ('Welche Massagen bieten Sie an?')">Alle Massagen &amp; Preise</button>
+      <button class="qbtn" onclick="sendQ('Wie buche ich einen Termin?')">Termin buchen</button>
+      <button class="qbtn" onclick="sendQ('Wo finde ich Sie?')">Adresse &amp; Anfahrt</button>
+      <button class="qbtn" onclick="sendQ('Gibt es Gutscheine?')">Gutscheine</button>
+      <button class="qbtn" onclick="sendQ('Speichert der Chatbot meine Daten?')">Datenschutz</button>
+    </div>
+    <p class="chat-note">Bitte geben Sie keine sensiblen Gesundheitsdaten ein. Für verbindliche Termine oder medizinische Fragen kontaktieren Sie uns bitte direkt.</p>
+    <div class="chat-in-area">
+      <input type="text" class="chat-in" id="chatIn" placeholder="Ihre Frage stellen…" aria-label="Ihre Frage" onkeydown="if(event.key==='Enter')sendMsg()">
+      <button class="chat-send" type="button" aria-label="Nachricht senden" onclick="sendMsg()">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/></svg>
+      </button>
+    </div>
+  </div>
+  <button class="chat-trig" id="chatTrig" type="button" aria-label="Anchaya Assistent öffnen" aria-expanded="false" onclick="toggleChat()">
+    <div class="cdot" aria-hidden="true">?</div>
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+  </button>
+</div>
+
+<script>
+const SITE_DATA = {
+  studio: {
+    name: 'ANCHAYA THAI MASSAGE',
+    displayName: 'Anchaya Thai Massage',
+    owner: 'Yupin Herrmann',
+    addressLines: ['Karl-Köglsperger-Str. 11', '80939 München'],
+    addressText: 'Karl-Köglsperger-Str. 11, 80939 München',
+    courtyardNote: 'Das Studio befindet sich im Innenhof — zwischen Fahrschule Bavaria und Pizzeria Fellini. Bitte gehen Sie in den Innenhof; der Eingang befindet sich nicht direkt an der Straße.',
+    phoneDisplay: '089 / 12595098',
+    phoneHref: '08912595098',
+    whatsappDisplay: '0176 / 64758297',
+    whatsappUrl: 'https://wa.me/4917664758297',
+    email: 'info@anchaya-thai-massage.de',
+    mapsUrl: 'https://www.google.com/maps?q=48.201520,11.607080',
+    mapsRouteUrl: 'https://www.google.com/maps/dir/?api=1&destination=48.201520,11.607080',
+    mapsEmbedUrl: 'https://www.google.com/maps?q=48.201520,11.607080&z=19&output=embed',
+    transit: [
+      'U6 Kieferngarten: ca. 5 Minuten Fußweg',
+      'Bus 140, 170, 171',
+      'Haltestelle Paul-Hindemith-Allee'
+    ]
+  },
+  hours: {
+    weekday: 'Montag bis Freitag: 10:00 bis 19:00 Uhr',
+    saturday: 'Samstag: 10:00 bis 18:00 Uhr',
+    sundayHoliday: 'Sonntag und Feiertag: geschlossen'
+  },
+  policies: {
+    booking: 'Für einen verbindlichen Termin kontaktieren Sie uns bitte direkt per Telefon, WhatsApp, E-Mail oder über das Kontaktformular.',
+    cancellation: 'Bitte bis spätestens 10:00 Uhr des betreffenden Tages absagen, damit wir den Termin anderweitig vergeben können.',
+    medical: 'Ich kann keine medizinische Beratung oder Diagnose geben. Bei gesundheitlichen Beschwerden, Schwangerschaft, akuten Schmerzen oder Vorerkrankungen klären Sie die Massage bitte vorher ärztlich ab und kontaktieren Sie uns direkt.',
+    noGuarantee: 'Unsere Massagen können zur Entspannung beitragen und das Wohlbefinden unterstützen. Sie ersetzen keine ärztliche Beratung und keine medizinische oder therapeutische Behandlung.',
+    unknown: 'Dazu habe ich leider keine gesicherte Information. Bitte kontaktieren Sie uns direkt per Telefon oder E-Mail.'
+  },
+  voucher: {
+    text: 'Gutscheine können per E-Mail oder WhatsApp bestellt werden.',
+    steps: [
+      'Wunsch senden an E-Mail oder WhatsApp',
+      'Lieferadresse und gewünschten Gutscheinwert mitteilen',
+      'Betrag überweisen, zuzüglich 3 € Versandkosten',
+      'Der Gutschein wird per Post zugesendet'
+    ],
+    bank: 'Yupin Herrmann · Sparkasse',
+    iban: 'DE59 7015 0000 1003 4598 39'
+  },
+  massages: [
+    {
+      name: 'Thai Spa mit Öl',
+      description: 'Sanfte Entspannung mit hochwertigen Ölen — wohltuend für Körper und Geist zugleich.',
+      prices: [{ duration: 60, amount: 57 }, { duration: 90, amount: 77 }, { duration: 120, amount: 103 }],
+      packages: [{ duration: 60, amount: 285 }, { duration: 90, amount: 385 }, { duration: 120, amount: 515 }],
+      keywords: ['thai spa', 'thai spa mit öl', 'thai spa mit oel']
+    },
+    {
+      name: 'Original Thaimassage',
+      description: 'Traditionelle Thai Massage mit Drucktechniken und Dehnungen. Sie kann zur Lockerung, Entspannung und Balance beitragen.',
+      prices: [{ duration: 60, amount: 57 }, { duration: 90, amount: 77 }, { duration: 120, amount: 103 }],
+      packages: [{ duration: 60, amount: 285 }, { duration: 90, amount: 385 }, { duration: 120, amount: 515 }],
+      keywords: ['original thaimassage', 'thai massage', 'thaimassage', 'traditionelle thai massage']
+    },
+    {
+      name: 'Aromaöl-Massage',
+      description: 'Ruhige Massage mit aromatischen Ölen. Sie kann die Entspannung fördern und das persönliche Wohlbefinden unterstützen.',
+      prices: [{ duration: 60, amount: 57 }, { duration: 90, amount: 77 }, { duration: 120, amount: 103 }],
+      packages: [{ duration: 60, amount: 285 }, { duration: 90, amount: 385 }, { duration: 120, amount: 515 }],
+      keywords: ['aromaöl', 'aromaoel', 'aromaöl-massage', 'aroma']
+    },
+    {
+      name: 'Sport-Öl-Massage',
+      description: 'Kräftigere Öl-Massage nach körperlicher Belastung. Sie kann zur Erholung und allgemeinen Entspannung beitragen.',
+      prices: [{ duration: 60, amount: 57 }, { duration: 90, amount: 77 }, { duration: 120, amount: 103 }],
+      packages: [{ duration: 60, amount: 285 }, { duration: 90, amount: 385 }, { duration: 120, amount: 515 }],
+      keywords: ['sport', 'sport öl', 'sport oel', 'sport-öl']
+    },
+    {
+      name: 'Kopf / Nacken / Rücken',
+      description: 'Fokussierte Massage für Kopf-, Nacken-, Schulter- und Rückenbereich. Besonders geeignet, wenn Sie gezielt entspannen möchten.',
+      prices: [{ duration: 30, amount: 37 }, { duration: 60, amount: 57 }],
+      packages: [{ duration: 30, amount: 185 }, { duration: 60, amount: 285 }],
+      keywords: ['kopf', 'nacken', 'rücken', 'ruecken', 'schulter']
+    },
+    {
+      name: 'Fußreflexzonen',
+      description: 'Fußmassage mit ruhigen Drucktechniken. Sie kann zur ganzheitlichen Entspannung und inneren Balance beitragen.',
+      prices: [{ duration: 30, amount: 37 }, { duration: 60, amount: 57 }],
+      packages: [{ duration: 30, amount: 185 }, { duration: 60, amount: 285 }],
+      keywords: ['fuß', 'fuss', 'fußmassage', 'fussmassage', 'fußreflexzonen']
+    },
+    {
+      name: 'Kräuterstempel',
+      description: 'Warme Kräuterstempel mit ausgewählten Kräutern verbinden sanfte Wärme, Duft und Massagetechniken zu einer ruhigen Wellness-Anwendung.',
+      prices: [{ duration: 90, amount: 83 }],
+      packages: [{ duration: 90, amount: 414 }],
+      keywords: ['kräuterstempel', 'kraeuterstempel', 'kräuter', 'kraeuter', 'stempel']
+    }
+  ]
+};
+
+function escapeHtml(value) {
+  return String(value).replace(/[&<>"']/g, char => ({
+    '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+  }[char]));
+}
+function formatEuro(amount) { return `${amount} €`; }
+function formatDuration(minutes) { return `${minutes} Minuten`; }
+function renderRows(rows, isPackage) {
+  return rows.map(row => {
+    const duration = isPackage ? `${row.duration} Min. × 6` : formatDuration(row.duration);
+    return `<div class="pr"><span class="pr-dur">${escapeHtml(duration)}</span><span class="pr-amt">${escapeHtml(formatEuro(row.amount))}</span></div>`;
+  }).join('');
+}
+function renderServiceCard(item, isPackage) {
+  const rows = isPackage ? item.packages : item.prices;
+  const description = isPackage ? '5 Massagen zahlen, 6. Massage gratis — ca. 17% Ersparnis!' : item.description;
+  return `<div class="svc tilt"><div class="svc-name">${escapeHtml(item.name)}</div><div class="svc-desc">${escapeHtml(description)}</div><div class="price-rows">${renderRows(rows, isPackage)}</div></div>`;
+}
+function renderPriceCards() {
+  const single = document.getElementById('singlePriceGrid');
+  const packages = document.getElementById('packagePriceGrid');
+  if (single) single.innerHTML = SITE_DATA.massages.map(item => renderServiceCard(item, false)).join('');
+  if (packages) packages.innerHTML = SITE_DATA.massages.map(item => renderServiceCard(item, true)).join('');
+}
+renderPriceCards();
+function loadGoogleMap() {
+  const frame = document.getElementById('googleMapFrame');
+  if (!frame || frame.querySelector('iframe')) return;
+  const iframe = document.createElement('iframe');
+  iframe.src = SITE_DATA.studio.mapsEmbedUrl;
+  iframe.setAttribute('loading', 'lazy');
+  iframe.setAttribute('referrerpolicy', 'no-referrer-when-downgrade');
+  iframe.setAttribute('allowfullscreen', '');
+  iframe.setAttribute('title', 'Google Maps Karte ANCHAYA THAI MASSAGE München');
+  frame.classList.add('is-loaded');
+  frame.replaceChildren(iframe);
+}
+
+function toggleNav() {
+  const links = document.getElementById('navLinks');
+  const burger = document.getElementById('burger');
+  const open = links.classList.toggle('mob-open');
+  burger.classList.toggle('open', open);
+  burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  burger.setAttribute('aria-label', open ? 'Menü schließen' : 'Menü öffnen');
+}
+function closeNav() {
+  document.getElementById('navLinks').classList.remove('mob-open');
+  const burger = document.getElementById('burger');
+  burger.classList.remove('open');
+  burger.setAttribute('aria-expanded', 'false');
+  burger.setAttribute('aria-label', 'Menü öffnen');
+}
+function switchTab(id, btn) {
+  document.querySelectorAll('.tab-pane').forEach(p => { p.classList.remove('active'); p.hidden = true; });
+  document.querySelectorAll('.tab-btn').forEach(b => { b.classList.remove('active'); b.setAttribute('aria-selected', 'false'); b.tabIndex = -1; });
+  const pane = document.getElementById('tab-' + id);
+  if (pane) { pane.classList.add('active'); pane.hidden = false; }
+  btn.classList.add('active');
+  btn.setAttribute('aria-selected', 'true');
+  btn.tabIndex = 0;
+}
+const track = document.getElementById('carouselTrack');
+let drag = false, sx = 0, sl = 0;
+track.addEventListener('mousedown', e => { drag = true; sx = e.pageX - track.offsetLeft; sl = track.scrollLeft; });
+document.addEventListener('mousemove', e => { if (!drag) return; track.scrollLeft = sl - (e.pageX - track.offsetLeft - sx) * 1.5; updateProg(); });
+document.addEventListener('mouseup', () => drag = false);
+track.addEventListener('scroll', updateProg, { passive: true });
+function scrollCar(d) {
+  const items = track.querySelectorAll('.ci');
+  if (!items.length) return;
+  const w = items[0].offsetWidth + 18;
+  track.scrollBy({ left: d * w * 2, behavior: 'smooth' });
+}
+function updateProg() {
+  if (!track) return;
+  const max = track.scrollWidth - track.clientWidth;
+  const pct = max > 0 ? (track.scrollLeft / max) * 100 : 0;
+  const b = document.getElementById('progBar');
+  if (b) b.style.width = Math.min(pct, 100) + '%';
+}
+function showFormMessage(type, message) {
+  const box = document.getElementById('formOk');
+  if (!box) return;
+  box.classList.toggle('error', type === 'error');
+  box.textContent = message;
+  box.style.display = 'block';
+}
+async function doForm(e) {
+  e.preventDefault();
+  const form = e.target;
+  const submitButton = form.querySelector('button[type="submit"]');
+  const defaultButtonText = submitButton.textContent;
+  const failureText = `Die Nachricht konnte leider nicht gesendet werden. Bitte kontaktieren Sie uns direkt per Telefon, WhatsApp oder E-Mail.\n\nTelefon: ${SITE_DATA.studio.phoneDisplay}\nWhatsApp: ${SITE_DATA.studio.whatsappDisplay}\nE-Mail: ${SITE_DATA.studio.email}`;
+
+  if (form.elements['website']?.value.trim()) {
+    showFormMessage('success', 'Vielen Dank für Ihre Nachricht. Ihre Anfrage wurde gesendet. Wir melden uns schnellstmöglich bei Ihnen.');
+    form.reset();
+    return;
+  }
+  if (!form.checkValidity()) {
+    form.reportValidity();
+    return;
+  }
+
+  submitButton.disabled = true;
+  submitButton.textContent = 'Wird gesendet…';
+  showFormMessage('success', '');
+  document.getElementById('formOk').style.display = 'none';
+
+  try {
+    const payload = {
+      name: form.elements['name'].value.trim(),
+      email: form.elements['email'].value.trim(),
+      phone: form.elements['phone'].value.trim(),
+      message: form.elements['message'].value.trim(),
+      website: form.elements['website'].value.trim(),
+      source: 'Kontaktformular Website',
+      submitted_at: new Date().toISOString(),
+      dsgvo: form.elements['dsgvo'].checked
+    };
+
+    const response = await fetch('/api/contact', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify(payload)
+    });
+    const result = await response.json().catch(() => ({}));
+
+    if (!response.ok || result.success === false) {
+      throw new Error(result.message || 'Formularversand fehlgeschlagen.');
+    }
+
+    form.reset();
+    showFormMessage('success', 'Vielen Dank für Ihre Nachricht. Ihre Anfrage wurde gesendet. Wir melden uns schnellstmöglich bei Ihnen.');
+  } catch (error) {
+    showFormMessage('error', failureText);
+  } finally {
+    submitButton.disabled = false;
+    submitButton.textContent = defaultButtonText;
+  }
+}
+function toggleChat() {
+  const w = document.getElementById('chatWin');
+  const t = document.getElementById('chatTrig');
+  const d = t.querySelector('.cdot');
+  const open = w.classList.toggle('open');
+  t.classList.toggle('open', open);
+  t.setAttribute('aria-expanded', open ? 'true' : 'false');
+  t.setAttribute('aria-label', open ? 'Anchaya Assistent schließen' : 'Anchaya Assistent öffnen');
+  d.style.display = open ? 'none' : 'flex';
+  if (open) setTimeout(() => document.getElementById('chatIn').focus(), 120);
+}
+
+// ─── LOKALE CHATBOT-WISSENSBASIS ───────────────────────────────────────────
+const DETAIL_HINTS = ['ausführlich', 'ausfuehrlich', 'mehr details', 'genauer', 'erklär', 'erklaer', 'was muss ich wissen'];
+const CHAT_TOPICS = [
+  {
+    id: 'medical',
+    keys: ['schwanger', 'schwangerschaft', 'krank', 'fieber', 'entzündung', 'entzuendung', 'verletzung', 'operation', 'thrombose', 'herz', 'blutdruck', 'akute schmerzen', 'vorerkrankung', 'kontraindikation'],
+    reply: () => `${SITE_DATA.policies.medical}\n\n${contactBlock(false)}`
+  },
+  {
+    id: 'complaints',
+    keys: ['rückenschmerzen', 'rueckenschmerzen', 'schmerzen', 'verspannung', 'verspannt', 'nacken', 'rücken', 'ruecken', 'schulter', 'beschwerden'],
+    reply: detailed => detailed
+      ? `Bei Beschwerden oder Schmerzen kann ich keine medizinische Beratung oder Diagnose geben. Wenn es um ein allgemeines Verspannungsgefühl geht, ist auf der Website die Massage „Kopf / Nacken / Rücken“ als fokussierte Massage für Kopf-, Nacken-, Schulter- und Rückenbereich beschrieben.\n\n${SITE_DATA.policies.noGuarantee}\n\nBei akuten Schmerzen, Vorerkrankungen oder Unsicherheit bitte vorab ärztlich abklären und uns direkt kontaktieren.\n\n${contactBlock(false)}`
+      : `Bei Schmerzen kann ich keine medizinische Empfehlung geben. Bei allgemeinem Verspannungsgefühl kann die Massage „Kopf / Nacken / Rücken“ wohltuend sein; sie ersetzt keine ärztliche Beratung. ${contactSentence()}`
+  },
+  {
+    id: 'booking',
+    keys: ['termin', 'buchen', 'reservieren', 'vereinbaren', 'online buchen', 'buchung', 'terminbuchung'],
+    reply: detailed => detailed
+      ? `Gerne. Für einen verbindlichen Termin kontaktieren Sie uns bitte direkt per Telefon, WhatsApp, E-Mail oder über das Kontaktformular.\n\n${contactBlock(true)}\n\nDas Kontaktformular sendet Ihre Nachricht an ANCHAYA THAI MASSAGE; eine verbindliche Sofortbuchung findet dort nicht statt.\n\n${hoursBlock()}`
+      : `Gerne. Für einen verbindlichen Termin kontaktieren Sie uns bitte direkt per Telefon, WhatsApp, E-Mail oder über das Kontaktformular. ${contactInline()}`
+  },
+  {
+    id: 'walkin',
+    keys: ['spontan', 'walk in', 'walk-in', 'vorbeikommen', 'ohne termin', 'heute termin'],
+    reply: () => `${SITE_DATA.policies.unknown}\n\nFür einen verbindlichen Termin kontaktieren Sie uns bitte telefonisch, per WhatsApp oder per E-Mail. ${contactInline()}`
+  },
+  {
+    id: 'price',
+    keys: ['preis', 'preise', 'kosten', 'kostet', 'wie viel', 'wieviel', 'teuer', 'tarif', '60 minuten', '90 minuten', '120 minuten', '30 minuten'],
+    reply: (detailed, msg) => priceReply(detailed, msg)
+  },
+  {
+    id: 'package',
+    keys: ['6er', 'paket', 'angebote', 'angebot', 'rabatt', 'sparen', 'sechs', '5 zahlen'],
+    reply: detailed => detailed
+      ? `Das 6er-Paket ist auf der Website als „5 Massagen zahlen, 6. Massage gratis“ beschrieben.\n\n${packageLines().join('\n')}\n\nDie Pakete sind im Preisbereich der Website aufgeführt. Für die Buchung bitte direkt Kontakt aufnehmen.`
+      : `Ja. Es gibt 6er-Pakete nach dem Prinzip „5 Massagen zahlen, 6. gratis“. Beispiele: 60 Min. × 6 = 285 €, 90 Min. × 6 = 385 €, 120 Min. × 6 = 515 €.`
+  },
+  {
+    id: 'voucher',
+    keys: ['gutschein', 'gutscheine', 'geschenk', 'verschenken', 'bestellen', 'schenken'],
+    reply: detailed => detailed
+      ? `Ja, Gutscheine sind auf der Website vorgesehen.\n\n${SITE_DATA.voucher.steps.map((step, i) => `${i + 1}. ${step}`).join('\n')}\n\nKontakt: ${SITE_DATA.studio.email} oder WhatsApp ${SITE_DATA.studio.whatsappDisplay}. Bankverbindung für Gutscheine: ${SITE_DATA.voucher.bank}, IBAN ${SITE_DATA.voucher.iban}.`
+      : `Ja, Gutscheine können per E-Mail oder WhatsApp bestellt werden. Teilen Sie gewünschten Gutscheinwert und Lieferadresse mit; laut Website kommen 3 € Versandkosten hinzu.`
+  },
+  {
+    id: 'hours',
+    keys: ['öffnungszeiten', 'oeffnungszeiten', 'offen', 'geöffnet', 'geoeffnet', 'wann', 'heute', 'geschlossen', 'samstag', 'sonntag', 'feiertag'],
+    reply: (detailed, msg) => hoursReply(detailed, msg)
+  },
+  {
+    id: 'address',
+    keys: ['adresse', 'standort', 'wo seid', 'wo finde', 'anfahrt', 'route', 'google maps', 'maps', 'eingang', 'u bahn', 'u-bahn', 's bahn', 's-bahn', 'bus', 'kieferngarten', 'paul hindemith', 'innenhof', 'fahrschule', 'bavaria', 'pizzeria', 'fellini', 'münchen', 'muenchen'],
+    reply: () => 'Sie finden uns in der Karl-Köglsperger-Str. 11, 80939 München. Das Studio befindet sich im Innenhof — zwischen Fahrschule Bavaria und Pizzeria Fellini. Bitte gehen Sie in den Innenhof; der Eingang befindet sich nicht direkt an der Straße. Nutzen Sie am besten die Route zum Innenhof auf der Website.'
+  },
+  {
+    id: 'parking',
+    keys: ['parken', 'parkplatz', 'parkplätze', 'parkplaetze'],
+    reply: () => `${SITE_DATA.policies.unknown}\n\nZur Anfahrt sind U6 Kieferngarten sowie Bus 140, 170 und 171 zur Haltestelle Paul-Hindemith-Allee hinterlegt.`
+  },
+  {
+    id: 'contactForm',
+    keys: ['kontaktformular', 'formular', 'website schreiben', 'ueber website schreiben', 'über website schreiben', 'über die website schreiben', 'ueber die website schreiben', 'nachricht ueber website', 'nachricht über website', 'online schreiben', 'anfrage senden'],
+    reply: () => 'Ja, Sie können uns über das Kontaktformular schreiben. Ihre Nachricht wird an ANCHAYA THAI MASSAGE gesendet. Für kurzfristige Termine empfehlen wir zusätzlich Telefon oder WhatsApp.'
+  },
+  {
+    id: 'contact',
+    keys: ['telefon', 'nummer', 'anrufen', 'kontakt', 'e-mail', 'email', 'mail', 'whatsapp', 'schreiben', 'erreichbar'],
+    reply: detailed => detailed
+      ? `Sie erreichen ${SITE_DATA.studio.displayName} über diese Kontaktwege:\n\n${contactBlock(true)}\n\nFür verbindliche Termine nutzen Sie bitte Telefon, WhatsApp, E-Mail oder das Kontaktformular.`
+      : `Sie erreichen uns telefonisch unter ${SITE_DATA.studio.phoneDisplay}, per WhatsApp unter ${SITE_DATA.studio.whatsappDisplay} oder per E-Mail an ${SITE_DATA.studio.email}.`
+  },
+  {
+    id: 'massageTypes',
+    keys: ['massagearten', 'massagen', 'welche massage', 'angebot', 'thai massage', 'thaimassage', 'ölmassage', 'oelmassage', 'aroma', 'sport', 'fußmassage', 'fussmassage', 'fußreflexzonen', 'fussreflexzonen', 'kräuterstempel', 'kraeuterstempel', 'paarmassage'],
+    reply: (detailed, msg) => massageReply(detailed, msg)
+  },
+  {
+    id: 'duration',
+    keys: ['dauer', 'behandlungsdauer', 'wie lange', 'minuten', '30 min', '60 min', '90 min', '120 min'],
+    reply: detailed => detailed
+      ? `Die Website nennt folgende Behandlungsdauern:\n\n${durationLines().join('\n')}\n\nDie genaue Dauer hängt von der gewählten Massage ab.`
+      : `Die hinterlegten Behandlungsdauern sind je nach Massage 30, 60, 90 oder 120 Minuten. Kräuterstempel ist mit 90 Minuten hinterlegt.`
+  },
+  {
+    id: 'cancellation',
+    keys: ['stornieren', 'stornierung', 'absagen', 'absage', 'verschieben', 'terminverschiebung'],
+    reply: () => `${SITE_DATA.policies.cancellation} Für Terminverschiebungen kontaktieren Sie uns bitte direkt. ${contactInline()}`
+  },
+  {
+    id: 'payment',
+    keys: ['zahlung', 'zahlen', 'bar', 'karte', 'ec', 'kreditkarte', 'paypal', 'überweisung', 'ueberweisung', 'zahlungsart'],
+    reply: (_detailed, msg) => includesAny(normalizeText(msg), ['gutschein', 'gutscheine'])
+      ? `Für Gutscheine ist auf der Website eine Überweisung angegeben. Bankverbindung: ${SITE_DATA.voucher.bank}, IBAN ${SITE_DATA.voucher.iban}.`
+      : `${SITE_DATA.policies.unknown}\n\nFür Gutscheine ist auf der Website eine Überweisung angegeben; zu Zahlungsmöglichkeiten vor Ort liegen keine gesicherten Angaben vor.`
+  },
+  {
+    id: 'preparation',
+    keys: ['vorbereitung', 'vorbereiten', 'kleidung', 'anziehen', 'mitbringen', 'hygiene', 'duschen', 'ablauf'],
+    reply: () => `${SITE_DATA.policies.unknown}\n\nBitte kontaktieren Sie uns direkt, wenn Sie vor Ihrem Termin etwas Besonderes beachten möchten. ${contactInline()}`
+  },
+  {
+    id: 'privacy',
+    keys: ['datenschutz', 'dsgvo', 'daten', 'chatbot', 'speichern', 'cookies', 'localstorage', 'sessionstorage', 'privacy'],
+    reply: detailed => detailed
+      ? `Der Anchaya Assistent arbeitet lokal im Browser mit einer fest hinterlegten Wissensbasis. Ihre Eingaben werden nicht per API, Webhook oder externem KI-Dienst übertragen.\n\nDer Chatbot speichert keinen Chatverlauf in localStorage, sessionStorage oder Cookies. Bitte geben Sie trotzdem keine sensiblen Gesundheitsdaten ein.\n\nWeitere Informationen finden Sie in der Datenschutzerklärung: datenschutz.html`
+      : `Der Chatbot arbeitet lokal im Browser und speichert keinen Chatverlauf in localStorage, sessionStorage oder Cookies. Bitte geben Sie keine sensiblen Gesundheitsdaten ein. Details: datenschutz.html`
+  },
+  {
+    id: 'imprint',
+    keys: ['impressum', 'anbieter', 'betreiber', 'yupin herrmann', 'steuernummer', 'haftpflicht'],
+    reply: () => `Das Impressum finden Sie unter impressum.html. Betreiberin ist Yupin Herrmann, ${SITE_DATA.studio.name}, ${SITE_DATA.studio.addressText}.`
+  },
+  {
+    id: 'greeting',
+    keys: ['hallo', 'hi', 'guten tag', 'guten morgen', 'guten abend', 'servus', 'hey'],
+    reply: () => `Hallo und herzlich willkommen bei ${SITE_DATA.studio.displayName}. Ich helfe Ihnen gerne bei Fragen zu Massagen, Preisen, Öffnungszeiten, Anfahrt, Gutscheinen und Termin-Kontakt.`
+  },
+  {
+    id: 'thanks',
+    keys: ['danke', 'vielen dank', 'merci', 'super', 'perfekt'],
+    reply: () => `Sehr gerne. Wenn Sie einen verbindlichen Termin wünschen, kontaktieren Sie uns bitte direkt. ${contactInline()}`
+  }
+];
+
+function normalizeText(value) {
+  return String(value).toLowerCase()
+    .normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+    .replace(/ß/g, 'ss')
+    .replace(/[^a-z0-9\s-]/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+function includesAny(text, keys) {
+  return keys.some(key => text.includes(normalizeText(key)));
+}
+function isDetailedRequest(text) {
+  return includesAny(text, DETAIL_HINTS);
+}
+function contactInline() {
+  return `Telefon: ${SITE_DATA.studio.phoneDisplay}, WhatsApp: ${SITE_DATA.studio.whatsappDisplay}, E-Mail: ${SITE_DATA.studio.email}.`;
+}
+function contactSentence() {
+  return `Bitte kontaktieren Sie uns direkt: ${contactInline()}`;
+}
+function contactBlock(includeWhatsApp) {
+  const lines = [`Telefon: ${SITE_DATA.studio.phoneDisplay}`];
+  if (includeWhatsApp) lines.push(`WhatsApp: ${SITE_DATA.studio.whatsappDisplay}`);
+  lines.push(`E-Mail: ${SITE_DATA.studio.email}`);
+  return lines.join('\n');
+}
+function hoursBlock() {
+  return [SITE_DATA.hours.weekday, SITE_DATA.hours.saturday, SITE_DATA.hours.sundayHoliday].join('\n');
+}
+function durationLines() {
+  return SITE_DATA.massages.map(item => `${item.name}: ${item.prices.map(price => `${price.duration} Minuten`).join(', ')}`);
+}
+function packageLines() {
+  const unique = new Map();
+  SITE_DATA.massages.forEach(item => item.packages.forEach(price => {
+    const key = `${price.duration}-${price.amount}`;
+    if (!unique.has(key)) unique.set(key, `${price.duration} Min. × 6 = ${formatEuro(price.amount)}`);
+  }));
+  return Array.from(unique.values());
+}
+function servicePriceLine(item) {
+  return `${item.name}: ${item.prices.map(price => `${price.duration} Min. ${formatEuro(price.amount)}`).join(' · ')}`;
+}
+function extractDuration(text) {
+  const match = normalizeText(text).match(/\b(30|60|90|120)\b/);
+  return match ? Number(match[1]) : null;
+}
+function findMassage(text) {
+  const normalized = normalizeText(text);
+  return SITE_DATA.massages.find(item => includesAny(normalized, item.keywords));
+}
+function priceReply(detailed, msg) {
+  const duration = extractDuration(msg);
+  const massage = findMassage(msg);
+  if (massage) {
+    const singles = massage.prices.map(price => `${price.duration} Min. ${formatEuro(price.amount)}`).join(' · ');
+    const packages = massage.packages.map(price => `${price.duration} Min. × 6 ${formatEuro(price.amount)}`).join(' · ');
+    return detailed
+      ? `${massage.name}: ${singles}.\n\n6er-Paket: ${packages}.\n\n${massage.description}`
+      : `${massage.name} kostet ${singles}.`;
+  }
+  if (duration) {
+    const matches = SITE_DATA.massages.filter(item => item.prices.some(price => price.duration === duration));
+    if (!matches.length) return `${SITE_DATA.policies.unknown}\n\n${contactBlock(false)}`;
+    const min = Math.min(...matches.map(item => item.prices.find(price => price.duration === duration).amount));
+    const names = matches.map(item => item.name).join(', ');
+    return detailed
+      ? `${duration} Minuten sind für diese Massagen hinterlegt: ${names}.\n\nDer Preis beginnt bei ${formatEuro(min)}. Die vollständigen Preise stehen im Bereich „Preise & Angebote“.`
+      : `${duration} Minuten kosten ab ${formatEuro(min)}. Hinterlegt sind dafür: ${names}.`;
+  }
+  return detailed
+    ? `Unsere Preise beginnen bei 37 € für 30 Minuten. 60 Minuten kosten ab 57 €, 90 Minuten ab 77 € und 120 Minuten ab 103 €. Kräuterstempel kostet 83 € für 90 Minuten.\n\n6er-Pakete: ${packageLines().join(' · ')}.\n\nDie vollständige Übersicht steht im Preisbereich der Website.`
+    : `Unsere Preise beginnen bei 37 € für 30 Minuten. 60 Minuten kosten ab 57 €, 90 Minuten ab 77 € und 120 Minuten ab 103 €. Kräuterstempel kostet 83 € für 90 Minuten.`;
+}
+function hoursReply(detailed, msg) {
+  const normalized = normalizeText(msg);
+  if (includesAny(normalized, ['heute'])) {
+    const day = new Date().getDay();
+    const today = day === 6 ? SITE_DATA.hours.saturday : day === 0 ? SITE_DATA.hours.sundayHoliday : SITE_DATA.hours.weekday;
+    return `Heute gilt nach den hinterlegten Öffnungszeiten: ${today}. Bitte beachten Sie: An Feiertagen ist geschlossen.`;
+  }
+  return detailed
+    ? `Unsere Öffnungszeiten:\n\n${hoursBlock()}\n\nFür verbindliche Termine kontaktieren Sie uns bitte direkt. ${contactInline()}`
+    : `Wir sind Montag bis Freitag von 10:00 bis 19:00 Uhr und Samstag von 10:00 bis 18:00 Uhr geöffnet. Sonntag und Feiertag ist geschlossen.`;
+}
+function massageReply(detailed, msg) {
+  const massage = findMassage(msg);
+  const normalized = normalizeText(msg);
+  if (includesAny(normalized, ['paarmassage'])) return `${SITE_DATA.policies.unknown}\n\n${contactBlock(false)}`;
+  if (massage) {
+    return detailed
+      ? `${massage.name}: ${massage.description}\n\nPreise: ${massage.prices.map(price => `${price.duration} Min. ${formatEuro(price.amount)}`).join(' · ')}.\n\n${SITE_DATA.policies.noGuarantee}`
+      : `${massage.name}: ${massage.description} Preise: ${massage.prices.map(price => `${price.duration} Min. ${formatEuro(price.amount)}`).join(' · ')}.`;
+  }
+  return detailed
+    ? `Diese Massagearten sind auf der Website hinterlegt:\n\n${SITE_DATA.massages.map(servicePriceLine).join('\n')}\n\nAlle Angaben stammen aus dem Preisbereich der Website.`
+    : `Wir bieten Thai Spa mit Öl, Original Thaimassage, Aromaöl-Massage, Sport-Öl-Massage, Kopf / Nacken / Rücken, Fußreflexzonen und Kräuterstempel an.`;
+}
+function getReply(msg) {
+  const normalized = normalizeText(msg);
+  const detailed = isDetailedRequest(normalized);
+  const matches = CHAT_TOPICS.filter(entry => includesAny(normalized, entry.keys));
+  const topic =
+    matches.find(entry => entry.id === 'voucher' && includesAny(normalized, ['gutschein', 'gutscheine'])) ||
+    matches.find(entry => entry.id === 'package' && includesAny(normalized, ['6er', 'paket', 'rabatt', 'sparen', 'sechs', '5 zahlen'])) ||
+    matches[0];
+  if (topic) return topic.reply(detailed, msg);
+  return `${SITE_DATA.policies.unknown}\n\n${contactBlock(false)}`;
+}
+window.__ANCHAYA_TEST_API__ = { getReply, SITE_DATA };
+
+function addMsg(text, isUser) {
+  const m = document.getElementById('chatMsgs');
+  const d = document.createElement('div');
+  d.className = 'cm ' + (isUser ? 'cm-user' : 'cm-bot');
+  d.textContent = text;
+  m.appendChild(d);
+  m.scrollTop = m.scrollHeight;
+}
+function showTyping() {
+  const m = document.getElementById('chatMsgs');
+  const d = document.createElement('div');
+  d.id = 'typing'; d.className = 'typing-w';
+  d.innerHTML = '<div class="tdots"><div class="td"></div><div class="td"></div><div class="td"></div></div>';
+  m.appendChild(d); m.scrollTop = m.scrollHeight;
+}
+function hideTyping() { const t = document.getElementById('typing'); if (t) t.remove(); }
+function sendMsg() {
+  const inp = document.getElementById('chatIn');
+  const msg = inp.value.trim();
+  if (!msg) return;
+  inp.value = '';
+  document.getElementById('qbtns').style.display = 'none';
+  addMsg(msg, true);
+  showTyping();
+  const delay = 800 + Math.random() * 600;
+  setTimeout(() => { hideTyping(); addMsg(getReply(msg), false); }, delay);
+}
+function sendQ(t) { document.getElementById('chatIn').value = t; sendMsg(); }
+
+// ─── INTERAKTIONEN: Scroll, Reveal, Parallax, Tilt, Mobile-Bar ─────────────
+(function () {
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const finePointer = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+  const nav = document.getElementById('nav');
+  const mobileBar = document.getElementById('mobileBar');
+  const parallaxEls = [...document.querySelectorAll('[data-speed]')];
+  let ticking = false;
+
+  function onScrollFrame() {
+    const y = window.scrollY;
+    if (nav) nav.classList.toggle('scrolled', y > 60);
+    if (mobileBar) mobileBar.classList.toggle('is-visible', y > 520);
+    if (!reduceMotion) {
+      for (const el of parallaxEls) {
+        const s = parseFloat(el.dataset.speed) || 0;
+        el.style.transform = `translate3d(0, ${(y * s).toFixed(1)}px, 0)`;
+      }
+    }
+    updateProg();
+    ticking = false;
+  }
+  function onScroll() {
+    if (!ticking) { window.requestAnimationFrame(onScrollFrame); ticking = true; }
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScrollFrame();
+
+  // Scroll-Reveal
+  const revealEls = document.querySelectorAll('.reveal');
+  if (reduceMotion || !('IntersectionObserver' in window)) {
+    revealEls.forEach(el => el.classList.add('is-visible'));
+  } else {
+    const io = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) { entry.target.classList.add('is-visible'); obs.unobserve(entry.target); }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+    revealEls.forEach(el => io.observe(el));
+  }
+
+  // Sanfter 3D-Tilt auf Karten (max. wenige Grad)
+  if (finePointer && !reduceMotion) {
+    const MAX = 5;
+    document.querySelectorAll('.tilt').forEach(card => {
+      card.addEventListener('pointermove', e => {
+        const r = card.getBoundingClientRect();
+        const px = (e.clientX - r.left) / r.width - 0.5;
+        const py = (e.clientY - r.top) / r.height - 0.5;
+        card.style.transition = 'transform 0.08s linear';
+        card.style.transform = `perspective(900px) rotateX(${(-py * MAX).toFixed(2)}deg) rotateY(${(px * MAX).toFixed(2)}deg) translateY(-4px)`;
+      });
+      card.addEventListener('pointerleave', () => {
+        card.style.transition = 'transform 0.5s var(--ease), box-shadow 0.5s var(--ease)';
+        card.style.transform = '';
+      });
+    });
+  }
+
+  // Tastatur: Pfeiltasten für Preis-Tabs, Escape schließt Chat/Menü
+  const tabs = [...document.querySelectorAll('.tab-btn')];
+  tabs.forEach((tab, i) => {
+    tab.addEventListener('keydown', e => {
+      if (e.key !== 'ArrowRight' && e.key !== 'ArrowLeft') return;
+      e.preventDefault();
+      const next = e.key === 'ArrowRight' ? (i + 1) % tabs.length : (i - 1 + tabs.length) % tabs.length;
+      tabs[next].focus();
+      tabs[next].click();
+    });
+  });
+  document.addEventListener('keydown', e => {
+    if (e.key !== 'Escape') return;
+    const chat = document.getElementById('chatWin');
+    if (chat && chat.classList.contains('open')) { toggleChat(); document.getElementById('chatTrig').focus(); return; }
+    const links = document.getElementById('navLinks');
+    if (links && links.classList.contains('mob-open')) { closeNav(); document.getElementById('burger').focus(); }
+  });
+})();
+</script>
+</body>
+</html>
