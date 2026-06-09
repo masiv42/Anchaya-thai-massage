@@ -695,9 +695,9 @@ footer { background:#080808; padding:26px clamp(20px,5vw,48px); display:flex; ju
         <h3>Gutschein in 4 Schritten</h3>
         <div class="vstep"><div class="vstep-n">1</div><div class="vstep-t">Wunsch senden an <strong>info@anchaya-thai-massage.de</strong> oder WhatsApp <strong>0176 / 64758297</strong></div></div>
         <div class="vstep"><div class="vstep-n">2</div><div class="vstep-t">Lieferadresse und gewünschten Gutscheinwert mitteilen</div></div>
-        <div class="vstep"><div class="vstep-n">3</div><div class="vstep-t">Betrag überweisen (+ 3 &euro; Versandkosten) mit Verwendungszweck</div></div>
+        <div class="vstep"><div class="vstep-n">3</div><div class="vstep-t">Bankverbindung erhalten und Betrag überweisen (+ 3 &euro; Versandkosten) mit Verwendungszweck</div></div>
         <div class="vstep"><div class="vstep-n">4</div><div class="vstep-t">Wir senden Ihnen den schönen Gutschein per Post zu</div></div>
-        <div class="vbank"><strong>Bankverbindung</strong><br>Yupin Herrmann &middot; Sparkasse<br>IBAN: DE59 7015 0000 1003 4598 39</div>
+        <div class="vbank"><strong>Bankverbindung</strong><br>Die Bankdaten für die Überweisung erhalten Sie nach Ihrer Anfrage per E-Mail oder WhatsApp.</div>
       </div>
     </div>
   </div>
@@ -891,11 +891,10 @@ const SITE_DATA = {
     steps: [
       'Wunsch senden an E-Mail oder WhatsApp',
       'Lieferadresse und gewünschten Gutscheinwert mitteilen',
-      'Betrag überweisen, zuzüglich 3 € Versandkosten',
+      'Bankverbindung erhalten und Betrag überweisen, zuzüglich 3 € Versandkosten',
       'Der Gutschein wird per Post zugesendet'
     ],
-    bank: 'Yupin Herrmann · Sparkasse',
-    iban: 'DE59 7015 0000 1003 4598 39'
+    bankNote: 'Die Bankverbindung teilen wir Ihnen nach Ihrer Anfrage per E-Mail oder WhatsApp mit.'
   },
   massages: [
     {
@@ -1149,7 +1148,7 @@ const CHAT_TOPICS = [
     id: 'voucher',
     keys: ['gutschein', 'gutscheine', 'geschenk', 'verschenken', 'bestellen', 'schenken'],
     reply: detailed => detailed
-      ? `Ja, Gutscheine sind auf der Website vorgesehen.\n\n${SITE_DATA.voucher.steps.map((step, i) => `${i + 1}. ${step}`).join('\n')}\n\nKontakt: ${SITE_DATA.studio.email} oder WhatsApp ${SITE_DATA.studio.whatsappDisplay}. Bankverbindung für Gutscheine: ${SITE_DATA.voucher.bank}, IBAN ${SITE_DATA.voucher.iban}.`
+      ? `Ja, Gutscheine sind auf der Website vorgesehen.\n\n${SITE_DATA.voucher.steps.map((step, i) => `${i + 1}. ${step}`).join('\n')}\n\nKontakt: ${SITE_DATA.studio.email} oder WhatsApp ${SITE_DATA.studio.whatsappDisplay}. ${SITE_DATA.voucher.bankNote}`
       : `Ja, Gutscheine können per E-Mail oder WhatsApp bestellt werden. Teilen Sie gewünschten Gutscheinwert und Lieferadresse mit; laut Website kommen 3 € Versandkosten hinzu.`
   },
   {
@@ -1200,7 +1199,7 @@ const CHAT_TOPICS = [
     id: 'payment',
     keys: ['zahlung', 'zahlen', 'bar', 'karte', 'ec', 'kreditkarte', 'paypal', 'überweisung', 'ueberweisung', 'zahlungsart'],
     reply: (_detailed, msg) => includesAny(normalizeText(msg), ['gutschein', 'gutscheine'])
-      ? `Für Gutscheine ist auf der Website eine Überweisung angegeben. Bankverbindung: ${SITE_DATA.voucher.bank}, IBAN ${SITE_DATA.voucher.iban}.`
+      ? `Für Gutscheine erfolgt die Zahlung per Überweisung. ${SITE_DATA.voucher.bankNote}`
       : `${SITE_DATA.policies.unknown}\n\nFür Gutscheine ist auf der Website eine Überweisung angegeben; zu Zahlungsmöglichkeiten vor Ort liegen keine gesicherten Angaben vor.`
   },
   {
