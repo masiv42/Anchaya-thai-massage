@@ -23,17 +23,25 @@
 {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
+  "@id": "https://anchaya-thai-massage.vercel.app/#studio",
   "name": "ANCHAYA THAI MASSAGE",
+  "url": "https://anchaya-thai-massage.vercel.app/",
   "description": "Traditionelle Thai Massage in München-Schwabing zur Entspannung und Unterstützung des Wohlbefindens.",
   "telephone": "+49 (0) 89 / 12595098",
   "email": "info@anchaya-thai-massage.de",
-  "image": "assets/images/hero-bg.jpg",
+  "image": "https://anchaya-thai-massage.vercel.app/assets/images/hero-bg.jpg",
+  "areaServed": "München",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Karl-Köglsperger-Str. 11",
     "postalCode": "80939",
     "addressLocality": "München",
     "addressCountry": "DE"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 48.201520,
+    "longitude": 11.607080
   },
   "openingHoursSpecification": [
     {
@@ -123,7 +131,7 @@ footer a:focus-visible, .fab-wa:focus-visible, .chat-wrap button:focus-visible,
 .divider svg { width:34px; height:22px; flex-shrink:0; color:var(--gold); }
 
 /* Scroll-Reveal */
-.reveal { opacity:0; transform:translateY(28px); transition:opacity 0.9s var(--ease), transform 0.9s var(--ease); transition-delay:var(--d,0s); will-change:opacity,transform; }
+.reveal { opacity:0; transform:translateY(28px); transition:opacity 0.9s var(--ease), transform 0.9s var(--ease); transition-delay:var(--d,0s); }
 .reveal.is-visible { opacity:1; transform:none; }
 
 /* Tilt-Karten (Tiefe) */
@@ -135,7 +143,10 @@ footer a:focus-visible, .fab-wa:focus-visible, .chat-wrap button:focus-visible,
   padding:22px clamp(20px,5vw,56px); display:flex; justify-content:space-between; align-items:center;
   transition:padding 0.45s var(--ease), background 0.45s var(--ease), box-shadow 0.45s var(--ease);
 }
-#nav.scrolled { background:rgba(12,12,12,0.92); backdrop-filter:blur(18px) saturate(1.1); -webkit-backdrop-filter:blur(18px) saturate(1.1); padding:13px clamp(20px,5vw,56px); box-shadow:0 1px 0 rgba(201,169,110,0.22), 0 8px 30px rgba(0,0,0,0.18); }
+/* Hinweis: KEIN backdrop-filter/filter/transform auf #nav — sonst wuerde #nav
+   zum Containing Block fuer das position:fixed Menue-Overlay und dieses nach dem
+   Scrollen falsch positioniert/abgeschnitten. Solider Hintergrund stattdessen. */
+#nav.scrolled { background:rgba(12,12,12,0.96); padding:13px clamp(20px,5vw,56px); box-shadow:0 1px 0 rgba(201,169,110,0.22), 0 8px 30px rgba(0,0,0,0.18); }
 .logo { font-family:Georgia,"Times New Roman",serif; font-size:1.32rem; color:#fff; text-decoration:none; letter-spacing:0.07em; display:flex; align-items:center; gap:10px; }
 .logo svg { width:26px; height:18px; color:var(--gold); }
 .logo em { font-style:normal; color:var(--gold); }
@@ -253,7 +264,7 @@ footer a:focus-visible, .fab-wa:focus-visible, .chat-wrap button:focus-visible,
 /* ─── ANGEBOT / PREISE ─── */
 #angebot { padding:var(--section) 0; background:var(--cream-dark); }
 .tabs-bar { display:inline-flex; gap:6px; background:#fff; border:1px solid var(--line); border-radius:50px; padding:6px; margin:6px 0 48px; box-shadow:var(--sh-sm); }
-.tab-btn { background:none; border:none; cursor:pointer; padding:12px 26px; font-family:inherit; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:600; color:var(--muted); border-radius:50px; transition:all 0.35s var(--ease); white-space:nowrap; }
+.tab-btn { background:none; border:none; cursor:pointer; padding:14px 26px; min-height:46px; font-family:inherit; font-size:0.72rem; letter-spacing:0.1em; text-transform:uppercase; font-weight:600; color:var(--muted); border-radius:50px; transition:all 0.35s var(--ease); white-space:nowrap; }
 .tab-btn.active { color:#fff; background:var(--green); box-shadow:0 6px 16px rgba(30,53,48,0.22); }
 .tab-pane { display:none; } .tab-pane.active { display:block; }
 .svc-grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(290px,1fr)); gap:22px; }
@@ -412,10 +423,10 @@ footer { background:#080808; padding:26px clamp(20px,5vw,48px); display:flex; ju
 }
 @media (max-width:900px) {
   .nav-links { display:none; }
-  .nav-links.mob-open { display:flex; flex-direction:column; position:fixed; inset:0; height:100vh; height:100dvh; overflow-y:auto; -webkit-overflow-scrolling:touch; background:rgba(8,8,8,0.98); justify-content:center; align-items:center; gap:40px; padding:88px 24px 40px; z-index:999; }
+  .nav-links.mob-open { display:flex; flex-direction:column; position:fixed; inset:0; height:100vh; height:100dvh; overflow-y:auto; -webkit-overflow-scrolling:touch; background:rgba(8,8,8,0.98); justify-content:center; align-items:center; gap:40px; padding:calc(76px + env(safe-area-inset-top)) calc(24px + env(safe-area-inset-right)) calc(40px + env(safe-area-inset-bottom)) calc(24px + env(safe-area-inset-left)); z-index:999; }
   .nav-links.mob-open a { font-size:1.15rem; letter-spacing:0.2em; }
   .nav-links.mob-open .nav-cta { padding:14px 34px; }
-  .burger { display:flex; z-index:1001; }
+  .burger { display:flex; position:relative; z-index:1002; }
   .hero-float { display:none; }
   .scroll-cue { display:none; }
   .hero-body { padding-bottom:150px; }
@@ -435,7 +446,7 @@ footer { background:#080808; padding:26px clamp(20px,5vw,48px); display:flex; ju
   .hero-btns { width:100%; }
   .hero-btns .btn-gold, .hero-btns .btn-ghost { flex:1; text-align:center; padding:15px 20px; }
   .tabs-bar { width:100%; justify-content:center; }
-  .tab-btn { padding:11px 16px; font-size:0.66rem; }
+  .tab-btn { padding:13px 16px; font-size:0.66rem; }
 }
 
 /* ─── REDUCED MOTION ─── */
@@ -614,27 +625,27 @@ footer { background:#080808; padding:26px clamp(20px,5vw,48px); display:flex; ju
   </div>
   <div class="carousel-track reveal" id="carouselTrack" style="--d:.12s" role="region" aria-label="Bildergalerie Studio, horizontal scrollbar">
     <div class="ci wide">
-      <img src="assets/images/galerie-wartebereich.jpg" alt="Wartebereich mit Lichtvorhang" width="500" height="370" loading="lazy" decoding="async">
+      <img src="assets/images/galerie-wartebereich.jpg" alt="Gemütlicher Wartebereich mit Lichtervorhang, Rattan-Sofa und Regal mit Pflegeprodukten" width="500" height="370" loading="lazy" decoding="async">
       <div class="ci-cap"><span>Wartebereich</span></div>
     </div>
     <div class="ci tall">
-      <img src="assets/images/galerie-massage-liege.jpg" alt="Dekoratives Buddha-Kunstwerk im Studio" width="300" height="430" loading="lazy" decoding="async">
+      <img src="assets/images/galerie-massage-liege.jpg" alt="Meditatives Buddha-Wandbild mit warmen Lichterketten" width="300" height="430" loading="lazy" decoding="async">
       <div class="ci-cap"><span>Atmosphäre</span></div>
     </div>
     <div class="ci wide">
-      <img src="assets/images/galerie-raum-detail.jpg" alt="Massageraum mit dekorativen Schwänen" width="500" height="370" loading="lazy" decoding="async">
+      <img src="assets/images/galerie-raum-detail.jpg" alt="Behandlungsraum mit Massageliege und zu Schwänen gefalteten Handtüchern" width="500" height="370" loading="lazy" decoding="async">
       <div class="ci-cap"><span>Massageraum</span></div>
     </div>
     <div class="ci tall">
-      <img src="assets/images/galerie-behandlung.jpg" alt="Ruhiger Lounge-Bereich" width="300" height="430" loading="lazy" decoding="async">
+      <img src="assets/images/galerie-behandlung.jpg" alt="Ruhiger Lounge-Bereich mit Rattan-Sofa und handgeschnitzter Kommode" width="300" height="430" loading="lazy" decoding="async">
       <div class="ci-cap"><span>Lounge</span></div>
     </div>
     <div class="ci wide">
-      <img src="assets/images/galerie-lounge.jpg" alt="Produkte und Shop-Auswahl" width="500" height="370" loading="lazy" decoding="async">
+      <img src="assets/images/galerie-lounge.jpg" alt="Regal mit Pflegeprodukten und ausgewählten Artikeln im Studio" width="500" height="370" loading="lazy" decoding="async">
       <div class="ci-cap"><span>Shop &amp; Produkte</span></div>
     </div>
     <div class="ci tall">
-      <img src="assets/images/galerie-handtuecher.jpg" alt="Liebevolles Handtuch-Detail" width="300" height="430" loading="lazy" decoding="async">
+      <img src="assets/images/galerie-handtuecher.jpg" alt="Zu einem Herz gefaltete Schwan-Handtücher auf der Massageliege" width="300" height="430" loading="lazy" decoding="async">
       <div class="ci-cap"><span>Details</span></div>
     </div>
   </div>
@@ -701,7 +712,7 @@ footer { background:#080808; padding:26px clamp(20px,5vw,48px); display:flex; ju
       <div class="reveal" style="--d:.12s">
         <div class="iblock">
           <span class="ilbl">Adresse</span>
-          <div class="ival">ANCHAYA THAI MASSAGE<br>Karl-Köglsperger-Str. 11<br>80939 München<br><small>Unser Studio befindet sich im Innenhof &mdash; zwischen Fahrschule Bavaria und Pizzeria Fellini. Bitte gehen Sie in den Innenhof. Der Eingang befindet sich nicht direkt an der Straße.</small></div>
+          <div class="ival">ANCHAYA THAI MASSAGE<br>Karl-Köglsperger-Str. 11<br>80939 München<br><small>Eingang über den Innenhof — zwischen Fahrschule Bavaria und Pizzeria Fellini (nicht direkt an der Straße).</small></div>
           <a href="https://www.google.com/maps/dir/?api=1&destination=48.201520,11.607080" target="_blank" rel="noopener noreferrer" class="map-a">&#8599; Route zum Innenhof öffnen</a>
         </div>
         <div class="iblock">
@@ -724,7 +735,7 @@ footer { background:#080808; padding:26px clamp(20px,5vw,48px); display:flex; ju
         </div>
         <div class="iblock">
           <span class="ilbl">Anfahrt &Ouml;PNV</span>
-          <div class="transit-txt">🚇 U6 Kieferngarten: ca. 5 Minuten Fußweg<br>🚌 Bus 140, 170, 171<br>Haltestelle Paul-Hindemith-Allee<br>Hinweis: Unser Studio befindet sich im Innenhof &mdash; zwischen Fahrschule Bavaria und Pizzeria Fellini. Bitte gehen Sie in den Innenhof; der Eingang befindet sich nicht direkt an der Straße.</div>
+          <div class="transit-txt">🚇 U6 Kieferngarten: ca. 5 Minuten Fußweg<br>🚌 Bus 140, 170, 171 — Haltestelle Paul-Hindemith-Allee</div>
         </div>
       </div>
       <div class="reveal" style="--d:.2s">
